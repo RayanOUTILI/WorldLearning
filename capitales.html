@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <meta charset="utf-8">
+    <title>World's countries</title>
+    <script src="RecupPays.js"></script>
+    <script src="ValiderRep.js"></script>
+</head>
+
+<body id="capitales">
+    <!-- on appel recup pays -->
+    <script>
+        recupPays();
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="capitales.html">Capitales</a></li>
+            <li><a href="drapeaux.html">Drapeaux</a></li>
+        </ul>
+    </nav>
+
+    <ul id="listeReponses"></ul>
+    <div class="container">
+        <h3 id="NomDuPays"></h3>
+        <input type="text" id="inputText" placeholder="">
+        <button class="btn" onclick="validerCapitale()">Valider</button>
+        <div id="messageContainer" class="message"></div>
+        <p id="score"></p>
+    </div>
+
+
+    <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
+    <script>
+        var inputText = document.getElementById("inputText");
+
+        inputText.addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                validerCapitale();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

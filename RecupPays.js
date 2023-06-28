@@ -14,6 +14,7 @@ function recupPays() {
 
             console.log(PaysAleatoire.capitale);
 
+            document.getElementById('inputText').value = "";
             document.getElementById('inputText').placeholder = "Quelle est la capitale de " + NomPaysAleatoire + "?";
             document.getElementById("NomDuPays").innerHTML = NomPaysAleatoire;
         })

@@ -1,6 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .container {
     width: 300px;
-    margin: 0 auto;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container h3,
+p {
+    color: #fff;
+}
+
+#listeReponses ul {
+    width: 30%;
+}
+
+#listeReponses li {
+    color: white;
+    list-style: none;
+    margin: auto;
 }
 
 input[type="text"] {
@@ -25,7 +54,34 @@ input[type="text"] {
 .message {
     margin-top: 10px;
     padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    color: white;
+}
+
+.bg {
+    background-image: url("../img/bground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav {
+    background-color: #2d084a;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+#capitales {
+    background-color: #2d084a;
 }
