@@ -1,0 +1,898 @@
+{
+    "pays": [
+        {
+            "nom": "Afghanistan",
+            "capitale": "Kaboul",
+            "monnaie": "Afghani",
+            "langue": "Pashto, Dari",
+            "habitants": 38928346,
+            "drapeau": "img/afghanistan.png",
+            "continent": "Asie",
+            "superficie": 652230,
+            "fuseau_horaire": "UTC+4:30",
+            "pib": 192155,
+            "sites_celebres": [
+                "Bamyan Valley",
+                "Kaboul"
+            ],
+            "sport_national": "Buzkashi",
+            "religion": "Islam",
+            "systeme_politique": "République islamique",
+            "pays_frontaliers": [
+                "Iran",
+                "Pakistan",
+                "Tadjikistan",
+                "Turkménistan",
+                "Ouzbékistan",
+                "Chine"
+            ]
+        },
+        {
+            "nom": "Afrique du Sud",
+            "capitale": "Pretoria",
+            "monnaie": "Rand",
+            "langue": "Afrikaans, Anglais",
+            "habitants": 58775022,
+            "drapeau": "img/afrique-du-sud.png",
+            "continent": "Afrique",
+            "superficie": 1221037,
+            "fuseau_horaire": "UTC+2",
+            "pib": 351431000000,
+            "sites_celebres": [
+                "Le Cap",
+                "Parc national Kruger",
+                "Table Mountain"
+            ],
+            "sport_national": "Rugby",
+            "religion": "Christianisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Botswana",
+                "Lesotho",
+                "Mozambique",
+                "Namibie",
+                "Swaziland",
+                "Zimbabwe"
+            ]
+        },
+        {
+            "nom": "Albanie",
+            "capitale": "Tirana",
+            "monnaie": "Lek",
+            "langue": "Albanais",
+            "habitants": 2877797,
+            "drapeau": "img/albanie.png",
+            "continent": "Europe",
+            "superficie": 28748,
+            "fuseau_horaire": "UTC+1",
+            "pib": 15418,
+            "sites_celebres": [
+                "Berat",
+                "Gjirokastër",
+                "Butrint",
+                "Tirana"
+            ],
+            "sport_national": "Futboll",
+            "religion": "Islam, Christianisme",
+            "systeme_politique": "République parlementaire",
+            "pays_frontaliers": [
+                "Monténégro",
+                "Kosovo",
+                "Macédoine du Nord",
+                "Grèce"
+            ]
+        },
+        {
+            "nom": "Algérie",
+            "capitale": "Alger",
+            "monnaie": "Dinar algérien",
+            "langue": "Arabe",
+            "habitants": 43851044,
+            "drapeau": "img/algerie.png",
+            "continent": "Afrique",
+            "superficie": 2381741,
+            "fuseau_horaire": "UTC+1",
+            "pib": 175741,
+            "sites_celebres": [
+                "Alger",
+                "Timgad",
+                "Tipaza",
+                "Hoggar"
+            ],
+            "sport_national": "Football",
+            "religion": "Islam",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Tunisie",
+                "Libye",
+                "Niger",
+                "Mali",
+                "Mauritanie",
+                "Maroc",
+                "Sahara occidental"
+            ]
+        },
+        {
+            "nom": "Allemagne",
+            "capitale": "Berlin",
+            "monnaie": "Euro",
+            "langue": "Allemand",
+            "habitants": 83783942,
+            "drapeau": "img/allemagne.png",
+            "continent": "Europe",
+            "superficie": 357114,
+            "fuseau_horaire": "UTC+1",
+            "pib": 3979086,
+            "sites_celebres": [
+                "Berlin",
+                "München",
+                "Hambourg",
+                "Cologne"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "République fédérale",
+            "pays_frontaliers": [
+                "Autriche",
+                "Belgique",
+                "Danemark",
+                "France",
+                "Luxembourg",
+                "Pays-Bas",
+                "Pologne",
+                "République tchèque",
+                "Suisse"
+            ]
+        },
+        {
+            "nom": "Andorre",
+            "capitale": "Andorre-la-Vieille",
+            "monnaie": "Euro",
+            "langue": "Catalan",
+            "habitants": 77265,
+            "drapeau": "img/andorre.png",
+            "continent": "Europe",
+            "superficie": 468,
+            "fuseau_horaire": "UTC+1",
+            "pib": 3146,
+            "sites_celebres": [
+                "Vallée de Madriu-Perafita-Claror",
+                "Sant Joan de Caselles"
+            ],
+            "sport_national": "Ski",
+            "religion": "Catholicisme",
+            "systeme_politique": "Co-principauté parlementaire",
+            "pays_frontaliers": [
+                "Espagne",
+                "France"
+            ]
+        },
+        {
+            "nom": "Angola",
+            "capitale": "Luanda",
+            "monnaie": "Kwanza",
+            "langue": "Portugais",
+            "habitants": 32866272,
+            "drapeau": "img/angola.png",
+            "continent": "Afrique",
+            "superficie": 1246700,
+            "fuseau_horaire": "UTC+1",
+            "pib": 103766,
+            "sites_celebres": [
+                "Parc national de Kissama",
+                "Chutes de Kalandula"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "République démocratique du Congo",
+                "République du Congo",
+                "Namibie",
+                "Zambie"
+            ]
+        },
+        {
+            "nom": "Antigua-et-Barbuda",
+            "capitale": "Saint John's",
+            "monnaie": "Dollar des Caraïbes orientales",
+            "langue": "Anglais",
+            "habitants": 97928,
+            "drapeau": "img/antigua-et-barbuda.png",
+            "continent": "Amérique",
+            "superficie": 442,
+            "fuseau_horaire": "UTC-4",
+            "pib": 1680,
+            "sites_celebres": [
+                "Nelson's Dockyard",
+                "Shirley Heights"
+            ],
+            "sport_national": "Cricket",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie constitutionnelle parlementaire",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Arabie saoudite",
+            "capitale": "Riyad",
+            "monnaie": "Riyal saoudien",
+            "langue": "Arabe",
+            "habitants": 34813867,
+            "drapeau": "img/arabie-saoudite.png",
+            "continent": "Asie",
+            "superficie": 2149690,
+            "fuseau_horaire": "UTC+3",
+            "pib": 793974,
+            "sites_celebres": [
+                "La Mecque",
+                "Médine",
+                "Riyad"
+            ],
+            "sport_national": "Football",
+            "religion": "Islam",
+            "systeme_politique": "Monarchie absolue",
+            "pays_frontaliers": [
+                "Irak",
+                "Jordanie",
+                "Koweït",
+                "Oman",
+                "Qatar",
+                "Émirats arabes unis",
+                "Yémen"
+            ]
+        },
+        {
+            "nom": "Argentine",
+            "capitale": "Buenos Aires",
+            "monnaie": "Peso argentin",
+            "langue": "Espagnol",
+            "habitants": 45195774,
+            "drapeau": "img/argentine.png",
+            "continent": "Amérique",
+            "superficie": 2780400,
+            "fuseau_horaire": "UTC-3",
+            "pib": 445677,
+            "sites_celebres": [
+                "Buenos Aires",
+                "Chutes d'Iguazú",
+                "Glaciers nationaux de Patagonie"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "République fédérale",
+            "pays_frontaliers": [
+                "Bolivie",
+                "Brésil",
+                "Chili",
+                "Paraguay",
+                "Uruguay"
+            ]
+        },
+        {
+            "nom": "Arménie",
+            "capitale": "Erevan",
+            "monnaie": "Dram arménien",
+            "langue": "Arménien",
+            "habitants": 2963243,
+            "drapeau": "img/armenie.png",
+            "continent": "Asie",
+            "superficie": 29743,
+            "fuseau_horaire": "UTC+4",
+            "pib": 12848,
+            "sites_celebres": [
+                "Cathédrale d'Ejmiatsin",
+                "Monastère de Geghard"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Azerbaïdjan",
+                "Géorgie",
+                "Iran",
+                "Turquie"
+            ]
+        },
+        {
+            "nom": "Australie",
+            "capitale": "Canberra",
+            "monnaie": "Dollar australien",
+            "langue": "Anglais",
+            "habitants": 25550683,
+            "drapeau": "img/australie.png",
+            "continent": "Océanie",
+            "superficie": 7692024,
+            "fuseau_horaire": "UTC+8 à UTC+11",
+            "pib": 1444212,
+            "sites_celebres": [
+                "Opéra de Sydney",
+                "Great Barrier Reef"
+            ],
+            "sport_national": "Cricket",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie constitutionnelle parlementaire",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Autriche",
+            "capitale": "Vienne",
+            "monnaie": "Euro",
+            "langue": "Allemand",
+            "habitants": 8917205,
+            "drapeau": "img/autriche.png",
+            "continent": "Europe",
+            "superficie": 83879,
+            "fuseau_horaire": "UTC+1",
+            "pib": 477555,
+            "sites_celebres": [
+                "Palais de Schönbrunn",
+                "Vallée de Wachau"
+            ],
+            "sport_national": "Ski",
+            "religion": "Christianisme",
+            "systeme_politique": "République fédérale",
+            "pays_frontaliers": [
+                "Allemagne",
+                "Hongrie",
+                "Italie",
+                "Liechtenstein",
+                "République tchèque",
+                "Slovaquie",
+                "Slovénie",
+                "Suisse"
+            ]
+        },
+        {
+            "nom": "Azerbaïdjan",
+            "capitale": "Bakou",
+            "monnaie": "Manat azéri",
+            "langue": "Azéri",
+            "habitants": 10067108,
+            "drapeau": "img/azerbaidjan.png",
+            "continent": "Asie",
+            "superficie": 86600,
+            "fuseau_horaire": "UTC+4",
+            "pib": 47798,
+            "sites_celebres": [
+                "Palais des Chirvanchahs",
+                "Maiden Tower"
+            ],
+            "sport_national": "Goulach",
+            "religion": "Islam",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Arménie",
+                "Géorgie",
+                "Iran",
+                "Russie",
+                "Turquie"
+            ]
+        },
+        {
+            "nom": "Bahamas",
+            "capitale": "Nassau",
+            "monnaie": "Dollar bahaméen",
+            "langue": "Anglais",
+            "habitants": 385340,
+            "drapeau": "img/bahamas.png",
+            "continent": "Amérique",
+            "superficie": 13943,
+            "fuseau_horaire": "UTC-5",
+            "pib": 12297,
+            "sites_celebres": [
+                "Atlantis Paradise Island",
+                "Pink Sands Beach",
+                "Exuma Cays Land and Sea Park"
+            ],
+            "sport_national": "Cricket",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie parlementaire",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Bahreïn",
+            "capitale": "Manama",
+            "monnaie": "Dinar bahreïni",
+            "langue": "Arabe",
+            "habitants": 1543300,
+            "drapeau": "img/bahrein.png",
+            "continent": "Asie",
+            "superficie": 765,
+            "fuseau_horaire": "UTC+3",
+            "pib": 39202,
+            "sites_celebres": [
+                "Mosquée Al-Fateh",
+                "Fort d'Arad",
+                "Bahrain National Museum"
+            ],
+            "sport_national": "Football",
+            "religion": "Islam",
+            "systeme_politique": "Monarchie constitutionnelle",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Bangladesh",
+            "capitale": "Dacca",
+            "monnaie": "Taka",
+            "langue": "Bengali",
+            "habitants": 169303035,
+            "drapeau": "img/bangladesh.png",
+            "continent": "Asie",
+            "superficie": 147570,
+            "fuseau_horaire": "UTC+6",
+            "pib": 285803,
+            "sites_celebres": [
+                "Sundarbans",
+                "Mosquée de Sixty Dome",
+                "Cox's Bazar"
+            ],
+            "sport_national": "Kabaddi",
+            "religion": "Islam",
+            "systeme_politique": "République parlementaire",
+            "pays_frontaliers": [
+                "Inde",
+                "Myanmar"
+            ]
+        },
+        {
+            "nom": "Barbade",
+            "capitale": "Bridgetown",
+            "monnaie": "Dollar barbadien",
+            "langue": "Anglais",
+            "habitants": 285719,
+            "drapeau": "img/barbade.png",
+            "continent": "Amérique",
+            "superficie": 430,
+            "fuseau_horaire": "UTC-4",
+            "pib": 5205,
+            "sites_celebres": [
+                "Bathsheba Beach",
+                "Harrison's Cave",
+                "Mount Gay Rum Distillery"
+            ],
+            "sport_national": "Cricket",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie parlementaire",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Belgique",
+            "capitale": "Bruxelles",
+            "monnaie": "Euro",
+            "langue": "Français, Néerlandais, Allemand",
+            "habitants": 11632355,
+            "drapeau": "img/belgique.png",
+            "continent": "Europe",
+            "superficie": 30528,
+            "fuseau_horaire": "UTC+1",
+            "pib": 529686,
+            "sites_celebres": [
+                "Grand-Place de Bruxelles",
+                "Atomium",
+                "Cathédrale Notre-Dame d'Anvers"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie parlementaire fédérale",
+            "pays_frontaliers": [
+                "Allemagne",
+                "France",
+                "Luxembourg",
+                "Pays-Bas"
+            ]
+        },
+        {
+            "nom": "Belize",
+            "capitale": "Belmopan",
+            "monnaie": "Dollar bélizien",
+            "langue": "Anglais",
+            "habitants": 408487,
+            "drapeau": "img/belize.png",
+            "continent": "Amérique",
+            "superficie": 22966,
+            "fuseau_horaire": "UTC-6",
+            "pib": 1959,
+            "sites_celebres": [
+                "Réserve marine de la barrière de corail de Belize",
+                "Xunantunich",
+                "Great Blue Hole"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie constitutionnelle",
+            "pays_frontaliers": [
+                "Guatemala",
+                "Mexique"
+            ]
+        },
+        {
+            "nom": "Bénin",
+            "capitale": "Porto-Novo",
+            "monnaie": "Franc CFA",
+            "langue": "Français",
+            "habitants": 12123198,
+            "drapeau": "img/benin.png",
+            "continent": "Afrique",
+            "superficie": 112622,
+            "fuseau_horaire": "UTC+1",
+            "pib": 12777,
+            "sites_celebres": [
+                "Porto-Novo",
+                "Abomey",
+                "Parc national de la Pendjari"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme, Islam, Vaudou",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Burkina Faso",
+                "Niger",
+                "Nigéria",
+                "Togo"
+            ]
+        },
+        {
+            "nom": "Bhoutan",
+            "capitale": "Thimphou",
+            "monnaie": "Ngultrum",
+            "langue": "Dzongkha",
+            "habitants": 771608,
+            "drapeau": "img/bhoutan.png",
+            "continent": "Asie",
+            "superficie": 38394,
+            "fuseau_horaire": "UTC+6",
+            "pib": 2546,
+            "sites_celebres": [
+                "Taktshang (Tiger's Nest)",
+                "Punakha Dzong",
+                "Paro Taktsang"
+            ],
+            "sport_national": "Tir à l'arc",
+            "religion": "Bouddhisme",
+            "systeme_politique": "Monarchie constitutionnelle",
+            "pays_frontaliers": [
+                "Chine",
+                "Inde"
+            ]
+        },
+        {
+            "nom": "Biélorussie",
+            "capitale": "Minsk",
+            "monnaie": "Rouble biélorusse",
+            "langue": "Biélorusse, Russe",
+            "habitants": 9408400,
+            "drapeau": "img/bielorussie.png",
+            "continent": "Europe",
+            "superficie": 207600,
+            "fuseau_horaire": "UTC+3",
+            "pib": 61500,
+            "sites_celebres": [
+                "Château de Mir",
+                "Parc national de Belavezhskaya Pushcha",
+                "Białowieża"
+            ],
+            "sport_national": "Hockey sur glace",
+            "religion": "Christianisme orthodoxe",
+            "systeme_politique": "République présidentielle",
+            "pays_frontaliers": [
+                "Lettonie",
+                "Lituanie",
+                "Pologne",
+                "Russie",
+                "Ukraine"
+            ]
+        },
+        {
+            "nom": "Birmanie",
+            "capitale": "Naypyidaw",
+            "monnaie": "Kyat",
+            "langue": "Birman",
+            "habitants": 54810000,
+            "drapeau": "img/birmanie.png",
+            "continent": "Asie",
+            "superficie": 676578,
+            "fuseau_horaire": "UTC+6:30",
+            "pib": 76050,
+            "sites_celebres": [
+                "Pagode Shwedagon",
+                "Bagan",
+                "Lac Inle"
+            ],
+            "sport_national": "Chinlone",
+            "religion": "Bouddhisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Bangladesh",
+                "Chine",
+                "Inde",
+                "Laos",
+                "Thaïlande"
+            ]
+        },
+        {
+            "nom": "Bolivie",
+            "capitale": "Sucre (constitutionnelle), La Paz (siège du gouvernement)",
+            "monnaie": "Boliviano",
+            "langue": "Espagnol, Quechua, Aymara",
+            "habitants": 11353142,
+            "drapeau": "img/bolivie.png",
+            "continent": "Amérique",
+            "superficie": 1098581,
+            "fuseau_horaire": "UTC-4",
+            "pib": 40897,
+            "sites_celebres": [
+                "Salar d'Uyuni",
+                "Lac Titicaca",
+                "Ville de Potosí"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme, Animisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Argentine",
+                "Brésil",
+                "Chili",
+                "Paraguay",
+                "Pérou"
+            ]
+        },
+        {
+            "nom": "Bosnie-Herzégovine",
+            "capitale": "Sarajevo",
+            "monnaie": "Mark convertible",
+            "langue": "Bosnien, Croate, Serbe",
+            "habitants": 3323929,
+            "drapeau": "img/bosnie-herzegovine.png",
+            "continent": "Europe",
+            "superficie": 51209,
+            "fuseau_horaire": "UTC+1",
+            "pib": 20116,
+            "sites_celebres": [
+                "Vieux pont de Mostar",
+                "Vieux pont de Mostar",
+                "Bascarsija"
+            ],
+            "sport_national": "Football",
+            "religion": "Islam, Christianisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Croatie",
+                "Monténégro",
+                "Serbie"
+            ]
+        },
+        {
+            "nom": "Botswana",
+            "capitale": "Gaborone",
+            "monnaie": "Pula",
+            "langue": "Anglais, Tswana",
+            "habitants": 2374636,
+            "drapeau": "img/botswana.png",
+            "continent": "Afrique",
+            "superficie": 581730,
+            "fuseau_horaire": "UTC+2",
+            "pib": 18741,
+            "sites_celebres": [
+                "Delta de l'Okavango",
+                "Parc national de Chobe",
+                "Dune de sable du Kalahari"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme, Religion traditionnelle",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Afrique du Sud",
+                "Namibie",
+                "Zimbabwe"
+            ]
+        },
+        {
+            "nom": "Brésil",
+            "capitale": "Brasilia",
+            "monnaie": "Real brésilien",
+            "langue": "Portugais",
+            "habitants": 213993437,
+            "drapeau": "img/bresil.png",
+            "continent": "Amérique",
+            "superficie": 8515767,
+            "fuseau_horaire": "UTC-2 à UTC-5",
+            "pib": 1465198,
+            "sites_celebres": [
+                "Cristo Redentor",
+                "Plage de Copacabana",
+                "Amazonie"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme",
+            "systeme_politique": "République fédérative",
+            "pays_frontaliers": [
+                "Argentine",
+                "Bolivie",
+                "Colombie",
+                "Guyana",
+                "Paraguay",
+                "Pérou",
+                "Suriname",
+                "Uruguay",
+                "Venezuela"
+            ]
+        },
+        {
+            "nom": "Brunei",
+            "capitale": "Bandar Seri Begawan",
+            "monnaie": "Dollar de Brunei",
+            "langue": "Malais",
+            "habitants": 428962,
+            "drapeau": "img/brunei.png",
+            "continent": "Asie",
+            "superficie": 5765,
+            "fuseau_horaire": "UTC+8",
+            "pib": 13481,
+            "sites_celebres": [
+                "Mosquée Sultan Omar Ali Saifuddin",
+                "Kampong Ayer",
+                "Taman Haji Sir Muda Omar Ali Saifuddin"
+            ],
+            "sport_national": "Sepak takraw",
+            "religion": "Islam",
+            "systeme_politique": "Monarchie absolue islamique",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Bulgarie",
+            "capitale": "Sofia",
+            "monnaie": "Lev",
+            "langue": "Bulgare",
+            "habitants": 7050034,
+            "drapeau": "img/bulgarie.png",
+            "continent": "Europe",
+            "superficie": 110994,
+            "fuseau_horaire": "UTC+2",
+            "pib": 71397,
+            "sites_celebres": [
+                "Église de Boyana",
+                "Vieux Nessebar",
+                "Monastère de Rila"
+            ],
+            "sport_national": "Lutte",
+            "religion": "Christianisme orthodoxe",
+            "systeme_politique": "République parlementaire",
+            "pays_frontaliers": [
+                "Grèce",
+                "Macédoine du Nord",
+                "Roumanie",
+                "Serbie",
+                "Turquie"
+            ]
+        },
+        {
+            "nom": "Burkina Faso",
+            "capitale": "Ouagadougou",
+            "monnaie": "Franc CFA",
+            "langue": "Français",
+            "habitants": 20870060,
+            "drapeau": "img/burkina-faso.png",
+            "continent": "Afrique",
+            "superficie": 272967,
+            "fuseau_horaire": "UTC",
+            "pib": 13945,
+            "sites_celebres": [
+                "Mosquée de Bobo-Dioulasso",
+                "Village de Tiébélé",
+                "Cascades de Karfiguéla"
+            ],
+            "sport_national": "Football",
+            "religion": "Islam, Christianisme",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "Bénin",
+                "Côte d'Ivoire",
+                "Ghana",
+                "Mali",
+                "Niger",
+                "Togo"
+            ]
+        },
+        {
+            "nom": "Burundi",
+            "capitale": "Bujumbura",
+            "monnaie": "Franc burundais",
+            "langue": "Kirundi, Français",
+            "habitants": 11175378,
+            "drapeau": "img/burundi.png",
+            "continent": "Afrique",
+            "superficie": 27834,
+            "fuseau_horaire": "UTC+2",
+            "pib": 3822,
+            "sites_celebres": [
+                "Parc national de la Kibira",
+                "Lac Tanganyika",
+                "Gishora Drum Sanctuary"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme, Religion traditionnelle",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "République démocratique du Congo",
+                "Rwanda",
+                "Tanzanie"
+            ]
+        },
+        {
+            "nom": "Cambodge",
+            "capitale": "Phnom Penh",
+            "monnaie": "Riel",
+            "langue": "Khmer",
+            "habitants": 16718965,
+            "drapeau": "img/cambodge.png",
+            "continent": "Asie",
+            "superficie": 181035,
+            "fuseau_horaire": "UTC+7",
+            "pib": 27460,
+            "sites_celebres": [
+                "Angkor Wat",
+                "Palais royal de Phnom Penh",
+                "Sihanoukville"
+            ],
+            "sport_national": "Bokator",
+            "religion": "Bouddhisme",
+            "systeme_politique": "Monarchie constitutionnelle",
+            "pays_frontaliers": [
+                "Laos",
+                "Thaïlande",
+                "Vietnam"
+            ]
+        },
+        {
+            "nom": "Cameroun",
+            "capitale": "Yaoundé",
+            "monnaie": "Franc CFA",
+            "langue": "Français, Anglais",
+            "habitants": 22709892,
+            "drapeau": "img/cameroun.png",
+            "continent": "Afrique",
+            "superficie": 475442,
+            "fuseau_horaire": "UTC+1",
+            "pib": 38676,
+            "sites_celebres": [
+                "Mont Cameroun",
+                "Parc national de Waza",
+                "Chutes de la Lobé"
+            ],
+            "sport_national": "Football",
+            "religion": "Christianisme, Islam",
+            "systeme_politique": "République",
+            "pays_frontaliers": [
+                "République centrafricaine",
+                "Tchad",
+                "Congo",
+                "Guinée équatoriale",
+                "Gabon",
+                "Nigeria"
+            ]
+        },
+        {
+            "nom": "Canada",
+            "capitale": "Ottawa",
+            "monnaie": "Dollar canadien",
+            "langue": "Anglais, Français",
+            "habitants": 37589262,
+            "drapeau": "img/canada.png",
+            "continent": "Amérique",
+            "superficie": 9976140,
+            "fuseau_horaire": "UTC-3.5 à UTC-8",
+            "pib": 1705483,
+            "sites_celebres": [
+                "Chutes du Niagara",
+                "Vieux-Québec",
+                "Parc national de Banff"
+            ],
+            "sport_national": "Hockey sur glace",
+            "religion": "Christianisme",
+            "systeme_politique": "Monarchie constitutionnelle",
+            "pays_frontaliers": [
+                "États-Unis"
+            ]
+        }
+    ]
+}
