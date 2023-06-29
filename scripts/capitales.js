@@ -1,5 +1,11 @@
 var capitale;
-var score = 0;
+
+
+function afficherCapitale(NomPaysAleatoire) {
+    document.getElementById('inputText').value = "";
+    document.getElementById('inputText').placeholder = "Quelle est la capitale de " + NomPaysAleatoire + "?";
+    document.getElementById("NomDuPays").innerHTML = NomPaysAleatoire;
+}
 
 function validerCapitale() {
     var userInput = document.getElementById("inputText").value;
@@ -34,7 +40,7 @@ function validerCapitale() {
                 }
                 document.getElementById("NomDuPays").style.transform = "";
                 document.getElementById("inputText").style.transform = "";
-                recupPays();
+                paysAleatoire();
             } else {
                 document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
                 //on supprime en cas de mauvaise réponse 

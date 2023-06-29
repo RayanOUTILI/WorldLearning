@@ -1,7 +1,8 @@
+var score = 0;
 var PaysAleatoire;
 var NomPaysAleatoire;
 
-function recupPays() {
+function paysAleatoire() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
@@ -12,14 +13,19 @@ function recupPays() {
 
             NomPaysAleatoire = PaysAleatoire.nom;
 
+            console.log(NomPaysAleatoire)
             console.log(PaysAleatoire.capitale);
 
-            document.getElementById('inputText').value = "";
-            document.getElementById('inputText').placeholder = "Quelle est la capitale de " + NomPaysAleatoire + "?";
-            document.getElementById("NomDuPays").innerHTML = NomPaysAleatoire;
+            if (document.body.id === "capitales") {
+                afficherCapitale(NomPaysAleatoire);
+            }
+
+            if (document.body.id === "drapeaux") {
+                generateFlagUrl(NomPaysAleatoire);
+            }
+
         })
         .catch(error => {
             console.log('Une erreur s\'est produite :', error.message);
         });
 }
-
