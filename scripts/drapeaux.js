@@ -8,7 +8,7 @@ function generateFlagUrl(NomPaysAleatoire) {
 function validerDrapeau() {
     var RepDrapeau = document.getElementById("inputText").value;
 
-    if (RepDrapeau === NomPaysAleatoire) {
+    if (BonneReponse(RepDrapeau,NomPaysAleatoire)) {
         document.getElementById("messageContainer").innerHTML = "Réponse correcte!";
         score++;
         if (score == 1) {
@@ -19,13 +19,13 @@ function validerDrapeau() {
         }
         var listeReponses = document.getElementById("listeReponses");
         var reponseExistante = Array.from(listeReponses.getElementsByTagName("li")).find(function (item) {
-            return item.innerText === (NomPaysAleatoire + " - " + RepDrapeau);
+            return item.innerText === (NomPaysAleatoire);
         }
         );
 
         if (!reponseExistante) {
             var reponseElement = document.createElement("li");
-            reponseElement.innerText = NomPaysAleatoire + " - " + RepDrapeau;
+            reponseElement.innerText = NomPaysAleatoire;
 
             listeReponses.appendChild(reponseElement);
         }

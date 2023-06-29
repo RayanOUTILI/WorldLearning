@@ -19,7 +19,7 @@ function validerCapitale() {
             capitale = data.pays.find(pays => pays.nom === NomPaysAleatoire).capitale;
 
             // on fait la vérification dans le fetch pour que les données soient bien chargées
-            if (userInput === capitale) {
+            if (BonneReponse(userInput, capitale)) {
                 document.getElementById("messageContainer").innerHTML = "Réponse correcte!";
                 score++;
                 if (score == 1) {
