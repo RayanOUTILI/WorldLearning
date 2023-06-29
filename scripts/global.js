@@ -76,3 +76,18 @@ function calculateJaroWinklerSimilarity(a, b) {
     return jaroSimilarity;
 }
 
+// fonction qui compte le nombre de pays dans data.json 
+function compterPays() {
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            var nbPays = data.pays.length;
+            console.log(nbPays);
+        })
+        .catch(error => {
+            console.log('Une erreur s\'est produite :', error.message);
+        });
+}
+compterPays();
+
+
