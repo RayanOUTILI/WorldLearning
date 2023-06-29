@@ -52,14 +52,14 @@ function getCodeAlpha2(countryName) {
         "Afrique du Sud": 'ZA',
         "Åland, Îles": 'AX',
         Albanie: 'AL',
-        Algérie: 'DZ',
+        Algerie: 'DZ',
         Allemagne: 'DE',
         "Allemagne de l'EST": 'DD',
         Andorre: 'AD',
         Angola: 'AO',
         Anguilla: 'AI',
         Antarctique: 'AQ',
-        "Antigua et Barbuda": 'AG',
+        "Antigua-et-Barbuda": 'AG',
         "Antilles néerlandaises": 'AN',
         "Arabie Saoudite": 'SA',
         Argentine: 'AR',
@@ -72,19 +72,19 @@ function getCodeAlpha2(countryName) {
         Bahrein: 'BH',
         Bangladesh: 'BD',
         Barbade: 'BB',
-        Bélarus: 'BY',
+        Biélorussie: 'BY',
         Belgique: 'BE',
         Bélize: 'BZ',
         Bénin: 'BJ',
         Bermudes: 'BM',
         Bhoutan: 'BT',
-        "Bolivie (État plurinational de)": 'BO',
+        "Bolivie": 'BO',
         "Bonaire, Saint-Eustache et Saba": 'BQ',
         "Bosnie-Herzégovine": 'BA',
         Botswana: 'BW',
         "Bouvet, Ile": 'BV',
         Brésil: 'BR',
-        "Brunéi Darussalam": 'BN',
+        "Brunéi": 'BN',
         Bulgarie: 'BG',
         "Burkina Faso": 'BF',
         Burundi: 'BI',
@@ -305,6 +305,17 @@ function getCodeAlpha2(countryName) {
         Zambie: 'ZM',
         Zimbabwe: 'ZW'
     };
-    console.log(correspondancePaysAlpha2[countryName]);
+    const normalizedCountryName = countryName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
+
+
+    for (let pays in correspondancePaysAlpha2) {
+        const normalizedPays = pays.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
+
+        if (normalizedPays === normalizedCountryName) {
+            console.log("Pays non trouvé : " + normalizedPays);
+            console.log("Pays normalisé : " + normalizedCountryName);
+            return correspondancePaysAlpha2[pays];
+        }
+    }
     return correspondancePaysAlpha2[countryName] || '';
 }

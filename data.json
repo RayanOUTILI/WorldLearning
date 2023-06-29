@@ -213,7 +213,7 @@
             "pays_frontaliers": []
         },
         {
-            "nom": "Arabie saoudite",
+            "nom": "Arabie Saoudite",
             "capitale": "Riyad",
             "monnaie": "Riyal saoudien",
             "langue": "Arabe",
@@ -482,7 +482,7 @@
             ]
         },
         {
-            "nom": "Belize",
+            "nom": "Bélize",
             "capitale": "Belmopan",
             "monnaie": "Dollar bélizien",
             "langue": "Anglais",
@@ -583,7 +583,7 @@
             ]
         },
         {
-            "nom": "Birmanie",
+            "nom": "Myanmar",
             "capitale": "Naypyidaw",
             "monnaie": "Kyat",
             "langue": "Birman",
