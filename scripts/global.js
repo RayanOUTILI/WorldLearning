@@ -1,15 +1,22 @@
 var score = 0;
 var PaysAleatoire;
 var NomPaysAleatoire;
+var selectedNiveau;
 
-function paysAleatoire() {
+function paysAleatoire(niveau) {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
+            selectedNiveau = niveau;
             var i = Math.floor(Math.random() * data.pays.length);
+            PaysAleatoire = data.pays[i];// objet pays
 
-            // objet pays
-            PaysAleatoire = data.pays[i];
+            // on vérifie que le pays a la bonne difficulté
+            while (getDifficulty(PaysAleatoire) !== niveau) {
+                var i = Math.floor(Math.random() * data.pays.length);
+                PaysAleatoire = data.pays[i];
+            }
+            console.log(getDifficulty(PaysAleatoire));
 
             NomPaysAleatoire = PaysAleatoire.nom;
 
@@ -35,10 +42,8 @@ function paysAleatoire() {
 function BonneReponse(RepJoueur, RepAttendue) {
     RepJoueur = RepJoueur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     RepAttendue = RepAttendue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
-
     var similarity = calculateJaroWinklerSimilarity(RepJoueur, RepAttendue);
     var threshold = 0.9; // 10% de marge d'erreur
-
     return similarity >= threshold;
 }
 
@@ -87,6 +92,37 @@ function compterPays() {
         .catch(error => {
             console.log('Une erreur s\'est produite :', error.message);
         });
+}
+
+//méthode getDifficulty - basée sur des critères (très subjectifs), il se peut que ce ne soit pas très fiable
+//donne quand même + ou - une idée et permet de trier les pays par difficulté (à améliorer par la suite)
+function getDifficulty(country) {
+    var totalDifficulty = 1;
+
+    if (country.habitants > 1000000) {
+        totalDifficulty -= 1;
+    }
+    else {
+        totalDifficulty += 1;
+    }
+
+    if (country.superficie > 500000) {
+        totalDifficulty -= 1;
+    }
+    else {
+        totalDifficulty += 1;
+    }
+
+    if (country.pib > 500000) {
+        totalDifficulty -= 1;
+    } else {
+        totalDifficulty += 1;
+    }
+
+    // Limiter la difficulté entre 1 et 3
+    totalDifficulty = Math.min(Math.max(totalDifficulty, 1), 3);
+
+    return totalDifficulty;
 }
 
 

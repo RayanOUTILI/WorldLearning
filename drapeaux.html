@@ -8,12 +8,13 @@
     <title>World's countries</title>
     <script src="scripts/global.js"></script>
     <script src="scripts/drapeaux.js"></script>
+
 </head>
 
 <body id="drapeaux">
     <!-- on appel recup pays -->
     <script>
-        paysAleatoire();
+        // paysAleatoire();
     </script>
 
     <nav>
@@ -23,6 +24,12 @@
             <li><a href="drapeaux.html">Drapeaux</a></li>
         </ul>
     </nav>
+
+    <div id="levelSelection">
+        <button class="level-button" onclick="var niveau = 1; paysAleatoire(niveau);">Normal</button>
+        <button class="level-button" onclick="var niveau = 2; paysAleatoire(niveau);">Difficile</button>
+        <button class="level-button" onclick="var niveau = 3; paysAleatoire(niveau);">Impossible</button>
+    </div>
 
     <ul id="listeReponses"></ul>
     <div class="container">

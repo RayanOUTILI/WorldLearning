@@ -36,7 +36,7 @@ function validerDrapeau() {
             listeReponses.appendChild(reponseElement);
         }
         document.getElementById("inputText").style.transform = "";
-        paysAleatoire();
+        paysAleatoire(selectedNiveau);
 
     }
     else {
