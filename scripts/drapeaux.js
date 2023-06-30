@@ -1,5 +1,10 @@
 function generateFlagUrl(NomPaysAleatoire) {
-    var drapeauUrl = "https://img.geonames.org/flags/x/" + getCodeAlpha2(NomPaysAleatoire).toLowerCase() + ".gif";
+    if (NomPaysAleatoire === "Union Européenne") {
+        var drapeauUrl = "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg";
+    }
+    else {
+        var drapeauUrl = "https://img.geonames.org/flags/x/" + getCodeAlpha2(NomPaysAleatoire).toLowerCase() + ".gif";
+    }
     console.log(drapeauUrl);
     // document.getElementById("DrapeauDuPays").style.backgroundImage = "url(" + drapeauUrl + ")";
     document.getElementById("drapeauImage").src = drapeauUrl;

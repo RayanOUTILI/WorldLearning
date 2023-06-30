@@ -88,6 +88,5 @@ function compterPays() {
             console.log('Une erreur s\'est produite :', error.message);
         });
 }
-compterPays();
 
 
