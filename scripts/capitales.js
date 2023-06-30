@@ -40,7 +40,7 @@ function validerCapitale() {
                 }
                 document.getElementById("NomDuPays").style.transform = "";
                 document.getElementById("inputText").style.transform = "";
-                paysAleatoire();
+                paysAleatoire(selectedNiveau);
             } else {
                 document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
                 //on supprime en cas de mauvaise réponse 

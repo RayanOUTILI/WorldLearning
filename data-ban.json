@@ -1,0 +1,17 @@
+{
+    "nom": "Clipperton Island",
+    "capitale": "",
+    "monnaie": "Euro",
+    "langue": "Français",
+    "habitants": 0,
+    "drapeau": "img/clipperton.png",
+    "continent": "Amérique du Nord",
+    "superficie": 6,
+    "fuseau_horaire": "UTC-10",
+    "pib": 0,
+    "sites_celebres": [],
+    "sport_national": "",
+    "religion": "",
+    "systeme_politique": "",
+    "pays_frontaliers": []
+}

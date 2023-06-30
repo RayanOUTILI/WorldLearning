@@ -103,7 +103,7 @@ function getCodeAlpha2(countryName) {
         Chili: 'CL',
         Chine: 'CN',
         Chypre: 'CY',
-        'Clipperton Island': 'CP',
+        'Clipperton Island': 'CP',//viré du json vu que c'est un territoire français (meme drapeau)
         Colombie: 'CO',
         Comores: 'KM',
         Congo: 'CG',

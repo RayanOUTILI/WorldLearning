@@ -1000,23 +1000,6 @@
             "pays_frontaliers": []
         },
         {
-            "nom": "Clipperton Island",
-            "capitale": "",
-            "monnaie": "Euro",
-            "langue": "Français",
-            "habitants": 0,
-            "drapeau": "img/clipperton.png",
-            "continent": "Amérique du Nord",
-            "superficie": 6,
-            "fuseau_horaire": "UTC-10",
-            "pib": 0,
-            "sites_celebres": [],
-            "sport_national": "",
-            "religion": "",
-            "systeme_politique": "",
-            "pays_frontaliers": []
-        },
-        {
             "nom": "Colombie",
             "capitale": "Bogota",
             "monnaie": "Peso colombien",
@@ -3579,23 +3562,6 @@
             ]
         },
         {
-            "nom": "Monde",
-            "capitale": "",
-            "monnaie": "",
-            "langue": "",
-            "habitants": 7700000000,
-            "drapeau": "img/monde.png",
-            "continent": "",
-            "superficie": 510072000,
-            "fuseau_horaire": "",
-            "pib": null,
-            "sites_celebres": [],
-            "sport_national": "",
-            "religion": "",
-            "systeme_politique": "",
-            "pays_frontaliers": []
-        },
-        {
             "nom": "Mongolie",
             "capitale": "Oulan-Bator",
             "monnaie": "Tugrik mongol",
@@ -4438,7 +4404,7 @@
             ]
         },
         {
-            "nom": "République démocratique du Congo",
+            "nom": "Congo",
             "capitale": "Kinshasa",
             "monnaie": "Franc congolais",
             "langue": "Français",

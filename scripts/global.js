@@ -13,6 +13,7 @@ function paysAleatoire(niveau) {
 
             // on vérifie que le pays a la bonne difficulté
             while (getDifficulty(PaysAleatoire) !== niveau) {
+                console.log("ici essai niveau");
                 var i = Math.floor(Math.random() * data.pays.length);
                 PaysAleatoire = data.pays[i];
             }

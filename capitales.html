@@ -13,7 +13,7 @@
 <body id="capitales">
     <!-- on appel recup pays -->
     <script>
-        paysAleatoire();
+        // paysAleatoire();
     </script>
 
     <nav>
@@ -23,6 +23,12 @@
             <li><a href="drapeaux.html">Drapeaux</a></li>
         </ul>
     </nav>
+
+    <div id="levelSelection">
+        <button class="level-button" onclick="var niveau = 1; choisirNiveau(niveau);">Normal</button>
+        <button class="level-button" onclick="var niveau = 2; choisirNiveau(niveau);">Difficile</button>
+        <button class="level-button" onclick="var niveau = 3; choisirNiveau(niveau);">Impossible</button>
+    </div>
 
     <ul id="listeReponses"></ul>
     <div class="container">
@@ -45,6 +51,12 @@
                 validerCapitale();
             }
         });
+
+        function choisirNiveau(niveau) {
+            document.getElementById('levelSelection').style.display = 'none';
+            document.querySelector('.container').style.display = 'block';
+            paysAleatoire(niveau);
+        }
     </script>
 
 </body>
