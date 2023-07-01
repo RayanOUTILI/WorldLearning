@@ -4020,27 +4020,6 @@
             ]
         },
         {
-            "nom": "Pacific Ocean",
-            "capitale": "Aucune",
-            "monnaie": "Aucune",
-            "langue": "Aucune",
-            "habitants": 0,
-            "drapeau": "img/pacific-ocean.png",
-            "continent": "Océanie",
-            "superficie": 165250000,
-            "fuseau_horaire": "UTC-1 to UTC+12",
-            "pib": null,
-            "sites_celebres": [
-                "Grande Barrière de Corail",
-                "Îles Galápagos",
-                "Île de Pâques"
-            ],
-            "sport_national": "Aucun",
-            "religion": "Aucune",
-            "systeme_politique": "Aucun",
-            "pays_frontaliers": []
-        },
-        {
             "nom": "Pakistan",
             "capitale": "Islamabad",
             "monnaie": "Roupie pakistanaise",

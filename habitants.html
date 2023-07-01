@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <meta charset="utf-8">
+    <title>World's countries</title>
+    <script src="scripts/global.js"></script>
+    <script src="scripts/habitants.js"></script>
+    <script src="scripts/drapeaux.js"></script>
+</head>
+
+<body id="habitants">
+    <!-- on appel recup pays -->
+    <script>
+        DeuxPaysAleatoire();
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="capitales.html">Capitales</a></li>
+            <li><a href="drapeaux.html">Drapeaux</a></li>
+            <li><a href="habitants.html">Habitants</a></li>
+        </ul>
+    </nav>
+
+    <div class="game-content">
+        <h2 id="h2Text"></h2>
+        <div class="container" id="levelSelection">
+            <button id="hab-btn1" class="level-button" onclick="validerHabitants(1)">
+                <h3 id="pays1"></h3>
+            </button>
+            <button id="hab-btn2" class="level-button" onclick="validerHabitants(2)">
+                <h3 id="pays2"></h3>
+            </button>
+        </div>
+        <div class="game-info">
+            <p id="score"></p>
+            <ul id="listeReponses" style="margin-top: 25px;"></ul>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

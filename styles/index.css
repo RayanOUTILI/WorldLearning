@@ -246,8 +246,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-weight: bold;
 }
+
 
 .level-button:hover {
     transform: scale(1.1);
@@ -293,4 +294,14 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     background-image: url("https://images.unsplash.com/photo-1600907055749-d6cc7e75efd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80");
+}
+
+#habitants #levelSelection{
+    margin-top: 0;
+}
+
+#habitants h2{
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
 }
