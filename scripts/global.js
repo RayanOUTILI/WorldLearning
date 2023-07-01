@@ -32,6 +32,21 @@ function paysAleatoire(niveau) {
                 generateFlagUrl(NomPaysAleatoire);
             }
 
+            if (document.body.id == "frontieres"){
+                // si le pays n'a pas de pays frontaliers on le retire
+                while (PaysAleatoire.pays_frontaliers.length == 0) {
+                    paysAleatoire(1);
+                }
+
+                console.log(PaysAleatoire.pays_frontaliers);
+
+                tabPaysFrontaliers = PaysAleatoire.pays_frontaliers;
+    
+                generateFlagUrl(NomPaysAleatoire);
+    
+                afficherFrontiere(NomPaysAleatoire);
+            }
+
         })
         .catch(error => {
             console.log('Une erreur s\'est produite :', error.message);
@@ -100,7 +115,7 @@ function compterPays() {
 function getDifficulty(country) {
     var totalDifficulty = 1;
 
-    if (country.habitants > 1000000) {
+    if (country.habitants > 10000000) {
         totalDifficulty -= 1;
     }
     else {
@@ -114,7 +129,7 @@ function getDifficulty(country) {
         totalDifficulty += 1;
     }
 
-    if (country.pib > 500000) {
+    if (country.pib > 5000000) {
         totalDifficulty -= 1;
     } else {
         totalDifficulty += 1;
@@ -127,3 +142,23 @@ function getDifficulty(country) {
 }
 
 
+// function compterPaysParNiveau(niveau) {
+//     fetch('../data/data.json')
+//         .then(response => response.json())
+//         .then(data => {
+//             var nbPays = 0;
+//             for (var i = 0; i < data.pays.length; i++) {
+//                 if (getDifficulty(data.pays[i]) == niveau) {
+//                     nbPays++;
+//                 }
+//             }
+//             console.log(nbPays);
+//         })
+//         .catch(error => {
+//             console.log('Une erreur s\'est produite :', error.message);
+//         });
+// }
+
+// compterPaysParNiveau(1); //46
+// compterPaysParNiveau(2); //52 
+// compterPaysParNiveau(3); //149

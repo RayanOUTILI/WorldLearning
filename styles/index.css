@@ -20,7 +20,10 @@ body {
     justify-content: center;
     text-align: center;
     display: none;
+}
 
+#frontieres .container{
+    display: block;
 }
 
 #capitales .container{
