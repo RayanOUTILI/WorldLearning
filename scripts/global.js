@@ -4,7 +4,7 @@ var NomPaysAleatoire;
 var selectedNiveau;
 
 function paysAleatoire(niveau) {
-    fetch('data.json')
+    fetch('../data/data.json')
         .then(response => response.json())
         .then(data => {
             selectedNiveau = niveau;
@@ -82,9 +82,9 @@ function calculateJaroWinklerSimilarity(a, b) {
     return jaroSimilarity;
 }
 
-// fonction qui compte le nombre de pays dans data.json 
+// fonction qui compte le nombre de pays dans ./data/data.json 
 function compterPays() {
-    fetch('data.json')
+    fetch('../data/data.json')
         .then(response => response.json())
         .then(data => {
             var nbPays = data.pays.length;

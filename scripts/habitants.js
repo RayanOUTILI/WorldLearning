@@ -2,7 +2,7 @@ var PaysAleatoire1;
 var PaysAleatoire2;
 
 function DeuxPaysAleatoire() {
-    fetch('data.json')
+    fetch('../data/data.json')
         .then(response => response.json())
         .then(data => {
 

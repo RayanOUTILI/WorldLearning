@@ -2,15 +2,17 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
     <meta charset="utf-8">
     <title>World's countries</title>
-    <script src="scripts/global.js"></script>
-    <script src="scripts/capitales.js"></script>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/drapeaux.js"></script>
+    
+
 </head>
 
-<body id="capitales">
+<body id="drapeaux">
     <!-- on appel recup pays -->
     <script>
         // paysAleatoire();
@@ -18,7 +20,7 @@
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="capitales.html">Capitales</a></li>
             <li><a href="drapeaux.html">Drapeaux</a></li>
             <li><a href="habitants.html">Habitants</a></li>
@@ -33,13 +35,14 @@
 
     <div class="game-content">
         <div class="container">
-            <h3 id="NomDuPays"></h3>
+            <div id="DrapeauDuPays">
+                <img id="drapeauImage" src="">
+            </div>
             <div class="quest">
-                <input type="text" id="inputText" placeholder="">
-                <button class="btn" onclick="validerCapitale()">Valider</button>
-                <button class="btn" onclick="passerCapitale()">Passer</button>
-                <div id="messageContainer" class="message">
-                </div>
+                <input type="text" id="inputText" placeholder="Veuillez indiquer le pays">
+                <button class="btn" onclick="validerDrapeau()">Valider</button>
+                <button class="btn" onclick="passerDrapeau()">Passer</button>
+                <div id="messageContainer" class="message"></div>
             </div>
         </div>
         <div class="game-info">
@@ -47,7 +50,9 @@
             <ul id="listeReponses"></ul>
         </div>
     </div>
-    
+
+
+
     <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
     <script>
         var inputText = document.getElementById("inputText");
@@ -55,7 +60,7 @@
         inputText.addEventListener("keydown", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
-                validerCapitale();
+                validerDrapeau();
             }
         });
 
@@ -64,6 +69,7 @@
             document.querySelector('.container').style.display = 'block';
             paysAleatoire(niveau);
         }
+
     </script>
 
 </body>
