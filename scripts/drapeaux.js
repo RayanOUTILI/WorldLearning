@@ -49,7 +49,15 @@ function validerDrapeau() {
     }
 }
 
-
+function passerDrapeau(){
+    document.getElementById("messageContainer").innerHTML = "Vous n'avez pas la réponse ! C'était " + NomPaysAleatoire + " ! ";
+        //on supprime en cas de mauvaise réponse 
+        document.getElementById("listeReponses").innerHTML = "";
+        document.getElementById("inputText").value = "";
+        score = 0;
+        document.getElementById("score").innerHTML = score + " bonne réponse";
+        paysAleatoire(selectedNiveau);
+}
 
 
 // méthode qui associe chaque pays à son code alpha2 ce qui permet de récupérer une url pour afficher le drapeau

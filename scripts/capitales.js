@@ -55,3 +55,12 @@ function validerCapitale() {
 
 }
 
+function passerCapitale(){
+    document.getElementById("messageContainer").innerHTML = "Vous n'avez pas la réponse ! C'était " + PaysAleatoire.capitale + " ! ";
+        //on supprime en cas de mauvaise réponse 
+        document.getElementById("listeReponses").innerHTML = "";
+        document.getElementById("inputText").value = "";
+        score = 0;
+        document.getElementById("score").innerHTML = score + " bonne réponse";
+        paysAleatoire(selectedNiveau);
+}
