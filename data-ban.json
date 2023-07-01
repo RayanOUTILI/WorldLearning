@@ -1,17 +1,64 @@
 {
-    "nom": "Clipperton Island",
-    "capitale": "",
-    "monnaie": "Euro",
-    "langue": "Français",
-    "habitants": 0,
-    "drapeau": "img/clipperton.png",
-    "continent": "Amérique du Nord",
-    "superficie": 6,
-    "fuseau_horaire": "UTC-10",
-    "pib": 0,
-    "sites_celebres": [],
-    "sport_national": "",
-    "religion": "",
-    "systeme_politique": "",
-    "pays_frontaliers": []
+    "pays": [
+        {
+            "nom": "Clipperton Island",
+            "capitale": "",
+            "monnaie": "Euro",
+            "langue": "Français",
+            "habitants": 0,
+            "drapeau": "img/clipperton.png",
+            "continent": "Amérique du Nord",
+            "superficie": 6,
+            "fuseau_horaire": "UTC-10",
+            "pib": 0,
+            "sites_celebres": [],
+            "sport_national": "",
+            "religion": "",
+            "systeme_politique": "",
+            "pays_frontaliers": []
+        },
+        {
+            "nom": "Union européenne",
+            "capitale": null,
+            "monnaie": "Euro",
+            "langue": null,
+            "habitants": 446824528,
+            "drapeau": "img/union-europeenne.png",
+            "continent": "Europe",
+            "superficie": null,
+            "fuseau_horaire": null,
+            "pib": 19118763,
+            "sites_celebres": [],
+            "sport_national": null,
+            "religion": null,
+            "systeme_politique": "Organisation supranationale",
+            "pays_frontaliers": []
+        },{
+            "nom": "ex-République yougoslave de Macédoine",
+            "capitale": "Skopje",
+            "monnaie": "Denar",
+            "langue": "Macédonien",
+            "habitants": 2085051,
+            "drapeau": "img/macedoine.png",
+            "continent": "Europe",
+            "superficie": 25713,
+            "fuseau_horaire": "UTC+1",
+            "pib": 12626,
+            "sites_celebres": [
+                "Ohrid",
+                "Skopje",
+                "Parc national de Mavrovo"
+            ],
+            "sport_national": "Handball",
+            "religion": "Christianisme",
+            "systeme_politique": "République parlementaire",
+            "pays_frontaliers": [
+                "Albanie",
+                "Bulgarie",
+                "Grèce",
+                "Kosovo",
+                "Serbie"
+            ]
+        },
+    ]
 }

@@ -127,7 +127,7 @@ function getCodeAlpha2(countryName) {
         Estonie: 'EE',
         'États-Unis': 'US',
         Éthiopie: 'ET',
-        'ex-République yougoslave de Macédoine': 'XM',
+        'ex-République yougoslave de Macédoine': 'XM', //ban
         Finlande: 'FI',
         France: 'FR',
         Gabon: 'GA',
@@ -172,7 +172,7 @@ function getCodeAlpha2(countryName) {
         'Indian Ocean': 'IO',
         Indonésie: 'ID',
         Iran: 'IR',
-        Iraq: 'IQ',
+        Irak: 'IQ',
         Irlande: 'IE',
         Islande: 'IS',
         Israël: 'IL',

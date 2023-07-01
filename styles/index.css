@@ -20,9 +20,19 @@ body {
     justify-content: center;
     text-align: center;
     display: none;
+
 }
 
+#capitales .container{
+    height: 60%;
+    width: 40%;
+    margin: auto;
+    margin-top: 10%;
+}
 
+#capitales .container .quest{
+    width: 60%;
+}
 
 .container .quest {
     width: 30%;
@@ -48,9 +58,13 @@ p {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
+
+    background-color: #ffffff;
+    color: #777;
+    appearance: none;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 
 .btn {
@@ -93,10 +107,13 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: white ;
     text-decoration: none;
     font-size: 20px;
     margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
@@ -199,9 +216,17 @@ nav a:hover {
 
 
 /* Styles pour les boutons de sélection de niveau */
+#levelSelection {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    width: 100%;
+    gap: 5%;
+}
+
 .level-button {
     display: inline-block;
-    margin-right: 10px;
+    width: calc(80% / 3);
     padding: 8px 16px;
     font-size: 16px;
     font-weight: bold;
@@ -212,10 +237,59 @@ nav a:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-#levelSelection {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.level-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+#drapeaux button:nth-of-type(1) {
+    background-image: url("https://img.geonames.org/flags/x/ar.gif");
+}
+
+#drapeaux button:nth-of-type(2) {
+    background-image: url("https://img.geonames.org/flags/x/kz.gif");
+}
+
+#drapeaux button:nth-of-type(3) {
+    background-image: url("https://img.geonames.org/flags/x/im.gif");
+}
+
+
+#capitales button:nth-of-type(1) {
+    background-image: url("https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg");
+}
+
+#capitales button:nth-of-type(2) {
+    background-image: url("https://www.ou-et-quand.net/partir/images/illustration/dublin_756.jpg");
+}
+
+#capitales button:nth-of-type(3) {
+    background-image: url("https://media.routard.com/image/77/8/la-valette-malte-capitale.1542778.jpeg");
+}
+
+
+#drapeaux {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80");
+}
+
+#capitales{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1600907055749-d6cc7e75efd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80");
 }
