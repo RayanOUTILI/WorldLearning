@@ -15,6 +15,10 @@ body {
     height: 100%;
 }
 
+#home{
+    background-color: #0F172A; 
+}
+
 .container {
     align-items: center;
     justify-content: center;
@@ -99,10 +103,10 @@ input[type="text"] {
 .bg {
     /* background-image: url("../img/bground.jpeg");
      */
-     background-color: #0F172A; ;
+    background-color: #0F172A; ;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
 
 nav {
@@ -248,7 +252,7 @@ nav a:hover {
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: white;
+    /* color: white; */
     background-color: black;
     border: none;
     border-radius: 4px;
