@@ -16,8 +16,8 @@ body {
     height: 100%;
 }
 
-#home{
-    background-color: #0F172A; 
+#home {
+    background-color: #0F172A;
 }
 
 .container {
@@ -27,36 +27,39 @@ body {
     display: none;
 }
 
-#frontieres .container{
+#frontieres .container {
     display: block;
 }
-#formes .container{
+
+#formes .container {
     display: block;
 }
 
 /* #frontieres{
     background-color:#0F172A;
 }*/
-h2,h3{
+h2,
+h3 {
     color: white;
 }
 
 #formes {
-    background-color:#0F172A;
+    background-color: #0F172A;
 }
+
 /*
 #habitants{
     background-color:#0F172A;
 } */
 
-#capitales .container{
+#capitales .container {
     height: 60%;
     width: 40%;
     margin: auto;
     margin-top: 10%;
 }
 
-#capitales .container .quest{
+#capitales .container .quest {
     width: 60%;
 }
 
@@ -108,7 +111,8 @@ input[type="text"] {
 .bg {
     /* background-image: url("../img/bground.jpeg");
      */
-    background-color: #0F172A; ;
+    background-color: #0F172A;
+    ;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -132,7 +136,7 @@ nav ul {
 }
 
 nav a {
-    color: white ;
+    color: white;
     text-decoration: none;
     font-size: 20px;
     margin: 0 10px;
@@ -147,16 +151,17 @@ nav a:hover {
 
 #DrapeauDuPays {
     height: 300px;
-    max-width: 60%;
+    width: auto;
     margin: auto;
     display: block;
 }
 
-#formes #formeImage{
+#formes #formeImage {
     height: 300px;
-    width: 600px;
+    width: auto;
     margin: auto;
-    filter: invert(1); /*on inverse les couleurs */
+    filter: invert(1);
+    /*on inverse les couleurs */
 }
 
 .card-section {
@@ -172,8 +177,8 @@ nav a:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    max-width: 1200px;
-    width: 100%;
+    /* max-width: 1200px; */
+    width: 90%;
 }
 
 .card {
@@ -210,7 +215,7 @@ nav a:hover {
 
 /*ici à reprendre car je veux que ttes les cartes soient floutées
 le probleme ici c'est que ~ indique seulement les freres suivants de la carte survolée...*/
-.card:hover~.card:not(:hover) .card-bg { 
+.card:hover~.card:not(:hover) .card-bg {
     filter: brightness(1) saturate(0.7) contrast(1.2) blur(10px);
 }
 
@@ -324,7 +329,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
     /* background-image: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80"); */
 }
 
-#capitales{
+#capitales {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -332,18 +337,16 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
     /* background-image: url("https://images.unsplash.com/photo-1600907055749-d6cc7e75efd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"); */
 }
 
-#habitants #levelSelection{
+#habitants #levelSelection {
     margin-top: 0;
 }
 
-#habitants h2{
+#habitants h2 {
     text-align: center;
     margin-top: 8%;
     margin-bottom: 2%;
 }
 
-#score{
+#score {
     color: white;
 }
-
-

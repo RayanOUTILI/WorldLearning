@@ -1,22 +1,26 @@
-@media screen and (max-width: 960px) {
+@media screen and (max-width:1300px) {
     .card-grid {
         grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+    }
+    .card-section{
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width:760px) {
     .card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width:540px) {
     .card-grid {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width:760px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -30,9 +34,9 @@
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width:760px) {
 
-    #levelSelection { 
+    #levelSelection {
         flex-direction: column;
         align-items: center;
         margin-top: 5%;
@@ -49,7 +53,12 @@
         width: 90%;
     }
 
-    .container .quest{
+    .container .quest {
         width: 80%;
+    }
+
+    #formes #formesImage {
+        width: auto;
+
     }
 }
