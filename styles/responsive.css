@@ -26,10 +26,6 @@
 
 @media screen and (max-width: 760px) {
 
-    html{
-        background-color: yellow;
-    }
-
     #levelSelection { 
         flex-direction: column;
         align-items: center;
