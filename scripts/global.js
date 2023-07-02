@@ -63,7 +63,7 @@ function BonneReponse(RepJoueur, RepAttendue) {
     RepJoueur = RepJoueur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     RepAttendue = RepAttendue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     var similarity = calculateJaroWinklerSimilarity(RepJoueur, RepAttendue);
-    var threshold = 0.8; // 10% de marge d'erreur
+    var threshold = 0.8; // 20% de marge d'erreur
     return similarity >= threshold;
 }
 

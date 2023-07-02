@@ -10,6 +10,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     background-color: #0F172A;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -350,3 +351,162 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 #score {
     color: white;
 }
+
+
+footer {
+    margin-top: 400px;
+    flex-shrink: 0;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: #0e2543;
+    color: white;
+}
+
+.contenu-footer {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+#tag {
+    font-weight: bold;
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-contact h3,
+.footer-lejeu h3,
+.footer-informations h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.footer-contact ul {
+    list-style-type: none;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.liste-modes,
+.liste-informations {
+    list-style-type: none;
+}
+
+.liste-informations a {
+    text-decoration: none;
+    color: white;
+}
+
+.liste-informations li:nth-child(2),
+.liste-informations li:nth-child(3) {
+    margin-top: 10px;
+}
+
+.liste-modes li {
+    padding: 2px 0;
+}
+
+.liste-modes a {
+    text-decoration: none;
+    color: white;
+}
+
+.liste-contacts a:hover {
+    color: rgb(3, 3, 3);
+}
+
+.liste-informations a:hover {
+    color: rgb(3, 3, 3);
+}
+
+.liste-modes a:hover {
+    color: rgb(3, 3, 3);
+}
+
+.bloc3 {
+    width: 60%;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    footer{
+        margin-top: 250px;
+    }
+
+    .contenu-footer {
+        width: 700px;
+        flex-wrap: wrap;
+    }
+
+    .bloc {
+        width: 40%;
+        margin: 0 0;
+    }
+
+    .bloc3{
+        width: 80%;
+    }
+
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .contenu-footer {
+        width: 80%;/*320*/
+    }
+
+    .bloc {
+        width: 80%;/*300*/
+        margin: 30px 30px;
+    }
+
+    .bloc:nth-child(1),
+    .bloc:nth-child(2) {
+        margin-bottom: 30px;
+    }
+
+    .bloc:nth-child(1) {
+        margin-top: 0;
+    }
+
+    footer {
+        margin-top: 1600px;
+        margin-top: 600px;
+    }
+}
+
+@media screen and (max-width:600px){
+    footer{
+        margin-top: 1800px;
+    }
+}
+
+@media screen and (max-width:550px){
+    footer{
+        margin-top: 2400px;
+    }
+}
+
