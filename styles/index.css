@@ -9,6 +9,7 @@ html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    background-color: #0F172A;
 }
 
 body {
@@ -29,11 +30,21 @@ body {
 #frontieres .container{
     display: block;
 }
+#formes .container{
+    display: block;
+}
 
 /* #frontieres{
     background-color:#0F172A;
+}*/
+h2,h3{
+    color: white;
 }
 
+#formes {
+    background-color:#0F172A;
+}
+/*
 #habitants{
     background-color:#0F172A;
 } */
@@ -55,18 +66,12 @@ body {
     margin-top: 50px;
 }
 
-.container h3,
-p {
-    color: black;
-}
-
-
 #listeReponses ul {
     width: 30%;
 }
 
 #listeReponses li {
-    color: black;
+    color: white;
     list-style: none;
     margin: auto;
 }
@@ -97,7 +102,7 @@ input[type="text"] {
 .message {
     margin-top: 10px;
     padding: 10px;
-    color: black;
+    color: white;
 }
 
 .bg {
@@ -142,9 +147,16 @@ nav a:hover {
 
 #DrapeauDuPays {
     height: 300px;
-    width: 600px;
+    max-width: 60%;
     margin: auto;
     display: block;
+}
+
+#formes #formeImage{
+    height: 300px;
+    width: 600px;
+    margin: auto;
+    filter: invert(1); /*on inverse les couleurs */
 }
 
 .card-section {
@@ -196,9 +208,12 @@ nav a:hover {
     transform: scale(1.05) translateZ(0);
 }
 
-.card-grid:hover>.card:not(:hover) .card-bg {
+/*ici à reprendre car je veux que ttes les cartes soient floutées
+le probleme ici c'est que ~ indique seulement les freres suivants de la carte survolée...*/
+.card:hover~.card:not(:hover) .card-bg { 
     filter: brightness(1) saturate(0.7) contrast(1.2) blur(10px);
 }
+
 
 .card-content {
     left: 0;
@@ -208,16 +223,16 @@ nav a:hover {
 }
 
 .card_niveau {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 8px;
     text-transform: uppercase;
+    font-weight: 800;
 }
 
 .card-titre {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+    font-size: 2rem;
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
     line-height: 1.4;
 }
 
@@ -305,7 +320,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/bground.jpeg");
+    /* background-image: url("../img/bground.jpeg"); */
     /* background-image: url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80"); */
 }
 
@@ -313,7 +328,7 @@ nav a:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../img/bground.jpeg");
+    /* background-image: url("../img/bground.jpeg"); */
     /* background-image: url("https://images.unsplash.com/photo-1600907055749-d6cc7e75efd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"); */
 }
 
@@ -325,4 +340,8 @@ nav a:hover {
     text-align: center;
     margin-top: 8%;
     margin-bottom: 2%;
+}
+
+#score{
+    color: white;
 }

@@ -45,7 +45,7 @@ function validerHabitants(nb) {
         console.log("Bonne réponse");
         document.getElementById('h2Text').textContent = "Bonne réponse !";
         document.getElementById('h2Text').style.color = "green";
-        document.getElementById('h2Text').style.color = "black";
+        document.getElementById('h2Text').style.color = "white";
         DeuxPaysAleatoire();
         score++;
         if (score == 1) {
@@ -71,7 +71,7 @@ function validerHabitants(nb) {
         document.getElementById('h2Text').textContent = "Mauvaise réponse !";
         document.getElementById('h2Text').style.color = "red";
         setTimeout(function () {
-            document.getElementById('h2Text').style.color = "black";
+            document.getElementById('h2Text').style.color = "white";
             DeuxPaysAleatoire();
         }, 1500);
         document.getElementById("listeReponses").innerHTML = "";

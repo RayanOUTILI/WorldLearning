@@ -8,15 +8,14 @@
     <meta charset="utf-8">
     <title>World's countries</title>
     <script src="../scripts/global.js"></script>
+    <script src="../scripts/formes.js"></script>
     <script src="../scripts/drapeaux.js"></script>
-    
-
 </head>
 
-<body id="drapeaux">
+<body id="formes">
     <!-- on appel recup pays -->
     <script>
-        // paysAleatoire();
+        paysAleatoire(1);
     </script>
 
     <nav>
@@ -30,22 +29,17 @@
         </ul>
     </nav>
 
-    <div id="levelSelection">
-        <button class="level-button" onclick="var niveau = 1; choisirNiveau(niveau);">Normal</button>
-        <button class="level-button" onclick="var niveau = 2; choisirNiveau(niveau);">Difficile</button>
-        <button class="level-button" onclick="var niveau = 3; choisirNiveau(niveau);">Impossible</button>
-    </div>
-
     <div class="game-content">
         <div class="container">
             <div id="DrapeauDuPays">
-                <img id="drapeauImage" src="">
+                <img id="formeImage" src="">
             </div>
             <div class="quest">
-                <input type="text" id="inputText" placeholder="Veuillez indiquer le pays">
-                <button class="btn" onclick="validerDrapeau()">Valider</button>
-                <button class="btn" onclick="passerDrapeau()">Passer</button>
-                <div id="messageContainer" class="message"></div>
+                <input type="text" id="inputText" placeholder="">
+                <button class="btn" onclick="validerTerritoire()">Valider</button>
+                <button class="btn" onclick="passerTerritoire()">Passer</button>
+                <div id="messageContainer" class="message">
+                </div>
             </div>
         </div>
         <div class="game-info">
@@ -53,9 +47,7 @@
             <ul id="listeReponses"></ul>
         </div>
     </div>
-
-
-
+    
     <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
     <script>
         var inputText = document.getElementById("inputText");
@@ -63,15 +55,9 @@
         inputText.addEventListener("keydown", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
-                validerDrapeau();
+                validerTerritoire();
             }
         });
-
-        function choisirNiveau(niveau) {
-            document.getElementById('levelSelection').style.display = 'none';
-            document.querySelector('.container').style.display = 'block';
-            paysAleatoire(niveau);
-        }
 
     </script>
 

@@ -47,6 +47,10 @@ function paysAleatoire(niveau) {
                 afficherFrontiere(NomPaysAleatoire);
             }
 
+            if (document.body.id == "formes"){
+                generateShapeUrl(NomPaysAleatoire);
+            }
+
         })
         .catch(error => {
             console.log('Une erreur s\'est produite :', error.message);
