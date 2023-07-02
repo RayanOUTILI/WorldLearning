@@ -59,6 +59,9 @@
 
     #formes #formesImage {
         width: auto;
+    }
 
+    #capitales .container{
+        width: 100%;
     }
 }
