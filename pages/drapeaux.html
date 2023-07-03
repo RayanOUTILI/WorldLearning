@@ -46,6 +46,12 @@
                 <input type="text" id="inputText" placeholder="Veuillez indiquer le pays">
                 <button class="btn btn-valider" onclick="validerDrapeau()">Valider</button>
                 <button class="btn btn-passer" onclick="passerDrapeau()">Passer</button>
+                <button class="btn" onclick="afficherIndice()">Indice</button>
+                <div class="button-container">
+                    <button class="btn indice" onclick="donnerIndiceContinent()">Indice continent</button>
+                    <button class="btn indice" onclick="donnerIndiceHabitants()">Indice habitants</button>
+                    <button class="btn indice" onclick="donnerIndicePaysFrontaliers()">Indice pays frontaliers</button>
+                </div>
                 <div id="messageContainer" class="message"></div>
             </div>
         </div>

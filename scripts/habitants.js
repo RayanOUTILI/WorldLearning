@@ -53,6 +53,7 @@ function validerHabitants(nb) {
         } else {
             document.getElementById("score").innerHTML = score + " bonnes réponses";
         }
+        cacherIndice();
         var listeReponses = document.getElementById("listeReponses");
         var reponseExistante = Array.from(listeReponses.getElementsByTagName("li")).find(function (item) {
             return item.innerText === (PaysAleatoire1.nom + " - " + bonneRep);

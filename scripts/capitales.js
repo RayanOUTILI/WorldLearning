@@ -41,6 +41,7 @@ function validerCapitale() {
                 document.getElementById("NomDuPays").style.transform = "";
                 document.getElementById("inputText").style.transform = "";
                 paysAleatoire(selectedNiveau);
+                cacherIndice();
             } else {
                 document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
                 //on supprime en cas de mauvaise réponse 
@@ -63,6 +64,7 @@ function passerCapitale(){
         score = 0;
         document.getElementById("score").innerHTML = score + " bonne réponse";
         paysAleatoire(selectedNiveau);
+        cacherIndice();
 }
 
 // function autocomplete() {

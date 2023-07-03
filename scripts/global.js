@@ -32,7 +32,7 @@ function paysAleatoire(niveau) {
                 generateFlagUrl(NomPaysAleatoire);
             }
 
-            if (document.body.id == "frontieres"){
+            if (document.body.id == "frontieres") {
                 // si le pays n'a pas de pays frontaliers on le retire
                 while (PaysAleatoire.pays_frontaliers.length == 0) {
                     paysAleatoire(1);
@@ -41,13 +41,13 @@ function paysAleatoire(niveau) {
                 console.log(PaysAleatoire.pays_frontaliers);
 
                 tabPaysFrontaliers = PaysAleatoire.pays_frontaliers;
-    
+
                 generateFlagUrl(NomPaysAleatoire);
-    
+
                 afficherFrontiere(NomPaysAleatoire);
             }
 
-            if (document.body.id == "formes"){
+            if (document.body.id == "formes") {
                 generateShapeUrl(NomPaysAleatoire);
             }
 
@@ -166,3 +166,77 @@ function getDifficulty(country) {
 // compterPaysParNiveau(1); //46
 // compterPaysParNiveau(2); //52 
 // compterPaysParNiveau(3); //149
+
+
+// fonction qui donne le continent du pays lorsque bouton donnerIndice est cliqué
+function donnerIndiceContinent() {
+    fetch('../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            var continent = "";
+            data.pays.forEach(element => {
+                if (element.nom === NomPaysAleatoire) {
+                    continent = element.continent;
+                }
+            });
+
+            document.getElementById("messageContainer").innerHTML = "Ce pays se trouve en " + continent + " !";
+        });
+}
+
+function donnerIndiceHabitants() {
+    fetch('../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            var habitants = "";
+            data.pays.forEach(element => {
+                if (element.nom === NomPaysAleatoire) {
+                    habitants = element.habitants;
+                }
+            });
+            habitants = habitants.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            document.getElementById("messageContainer").innerHTML = "Ce pays contient " + habitants + " habitants !";
+        });
+}
+
+function donnerIndicePaysFrontaliers() {
+    fetch('../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            var tabPaysFrontaliers = [];
+            data.pays.forEach(element => {
+                if (element.nom === NomPaysAleatoire) {
+                    tabPaysFrontaliers = element.pays_frontaliers;
+                }
+            });
+            if (tabPaysFrontaliers.length == 0) {
+                document.getElementById("messageContainer").textContent = "Ce pays n'a pas de pays frontaliers !";
+            }
+            else {
+                document.getElementById("messageContainer").textContent = "Un pays frontalier " + tabPaysFrontaliers[0] + " !";
+            }
+        });
+}
+
+//fonction qui va afficher la premiere lettre de la capitale
+function donnerIndiceCapitale() {
+    var capitale = PaysAleatoire.capitale;
+    var premiereLettre = capitale.charAt(0);
+    document.getElementById("messageContainer").innerHTML = "La première lettre de la capitale est " + premiereLettre + " !";
+}
+
+function afficherIndice() {
+    var elements = document.getElementsByClassName("btn");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "block";
+    }
+}
+
+function cacherIndice() {
+    var elements = document.getElementsByClassName("indice");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].style.display = "none";
+    }
+
+}
+

@@ -24,6 +24,7 @@ function validerDrapeau() {
         }
         var listeReponses = document.getElementById("listeReponses");
         document.getElementById("inputText").value = "";
+        cacherIndice();
         var reponseExistante = Array.from(listeReponses.getElementsByTagName("li")).find(function (item) {
             return item.innerText === (NomPaysAleatoire);
         }
@@ -57,6 +58,7 @@ function passerDrapeau(){
         score = 0;
         document.getElementById("score").innerHTML = score + " bonne réponse";
         paysAleatoire(selectedNiveau);
+        cacherIndice();
 }
 
 

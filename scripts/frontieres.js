@@ -1,6 +1,6 @@
 var tabPaysFrontaliers = [];
 
-function afficherFrontiere(NomPaysAleatoire){
+function afficherFrontiere(NomPaysAleatoire) {
     document.getElementById('inputText').value = "";
     if (tabPaysFrontaliers.length > 1) {
         document.getElementById('inputText').placeholder = "Quelle sont les pays frontaliers de " + NomPaysAleatoire + "?";
@@ -16,9 +16,9 @@ function validerFrontiere() {
 
     var correct = false;
 
-    for (element of tabPaysFrontaliers){
+    for (element of tabPaysFrontaliers) {
         console.log(element);
-        if(BonneReponse(userRep, element)){
+        if (BonneReponse(userRep, element)) {
             correct = true;
             console.log("correct ! ");
             tabPaysFrontaliers.splice(tabPaysFrontaliers.indexOf(element), 1); // on enlève l'élément trouvé du tableau
@@ -32,6 +32,7 @@ function validerFrontiere() {
                 } else {
                     document.getElementById("score").innerHTML = score + " bonnes réponses";
                 }
+                cacherIndice();
                 var listeReponses = document.getElementById("listeReponses");
                 var reponseExistante = Array.from(listeReponses.getElementsByTagName("li")).find(function (item) {
                     return item.innerText === (NomPaysAleatoire);
@@ -45,7 +46,7 @@ function validerFrontiere() {
                 }
                 document.getElementById("inputText").style.transform = "";
             }
-            else if(tabPaysFrontaliers.length == 0){
+            else if (tabPaysFrontaliers.length == 0) {
                 score++;
                 document.getElementById("score").innerHTML = score + " bonnes réponses";
                 document.getElementById('messageContainer').textContent = "Réponse correcte ! Vous avez trouvé tous les pays frontaliers bravo !";
@@ -67,19 +68,20 @@ function validerFrontiere() {
     }
 }
 
-function passerFrontiere(){
-    if (tabPaysFrontaliers.length > 1){
+function passerFrontiere() {
+    if (tabPaysFrontaliers.length > 1) {
         document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Les pays frontaliers de " + NomPaysAleatoire + " étaient " + tabPaysFrontaliers + " ! ";
-    }    
-    else{
+    }
+    else {
         document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Le pays frontalier de " + NomPaysAleatoire + " était " + tabPaysFrontaliers + " ! ";
     }
     document.getElementById("listeReponses").innerHTML = "";
-        document.getElementById("inputText").value = "";
-        score = 0;
-        document.getElementById("score").innerHTML = score + " bonne réponse";
-        paysAleatoire(1);
+    document.getElementById("inputText").value = "";
+    score = 0;
+    document.getElementById("score").innerHTML = score + " bonne réponse";
+    paysAleatoire(1);
+    cacherIndice();
 }
 
-// rajouter des indices en cas de difficultés (trop de mvaises rep) ?  nb lettre ? 1ere lettre du pays frontalier ? 
+// rajouter des indices en cas de difficultés (trop de mvaises rep) ?  nb lettre ? 1ere lettre du pays frontalier ?
 //"joker" à exemple soit avoir la superficie d'un pays frontalier soit le nb hab..
