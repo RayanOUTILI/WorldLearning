@@ -67,7 +67,7 @@ h3 {
 .container .quest {
     width: 30%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 #listeReponses ul {
@@ -82,7 +82,7 @@ h3 {
 
 input[type="text"] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box;
 
     background-color: #ffffff;
@@ -93,14 +93,24 @@ input[type="text"] {
 }
 
 .btn {
+    margin-top: 10px;
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #55a5ff;
     color: #fff;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
+}
+
+.btn-valider{
+    background-color: rgb(68, 185, 68);
+}
+
+.btn-passer{
+    background-color: red;
 }
 
 .message {
@@ -155,6 +165,7 @@ nav a:hover {
     width: auto;
     margin: auto;
     display: block;
+    margin-bottom: -1px;
 }
 
 #formes #formeImage {
@@ -323,6 +334,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 
 
 #drapeaux {
+    margin-bottom: -1px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -443,4 +455,12 @@ footer {
     text-align: justify;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+} 
 
+
+.indice{
+    display: none;
+}

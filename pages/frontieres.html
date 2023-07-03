@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../styles/index.css">
     <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <meta charset="utf-8">
     <title>World's countries</title>
@@ -36,8 +36,10 @@
             <img id="drapeauImage" src="">
             <div class="quest">
                 <input type="text" id="inputText" placeholder="">
-                <button class="btn" onclick="validerFrontiere()">Valider</button>
-                <button class="btn" onclick="passerFrontiere()">Abandonner</button>
+                <!-- <div class="button-container"> -->
+                    <button class="btn btn-valider" onclick="validerFrontiere()">Valider</button>
+                    <button class="btn btn-passer" onclick="passerFrontiere()">Abandonner</button>
+                <!-- </div> -->
                 <div id="messageContainer" class="message">
                 </div>
             </div>
@@ -47,7 +49,7 @@
             <ul id="listeReponses"></ul>
         </div>
     </div>
-    
+
     <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
     <script>
         var inputText = document.getElementById("inputText");

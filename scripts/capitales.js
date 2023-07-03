@@ -64,3 +64,37 @@ function passerCapitale(){
         document.getElementById("score").innerHTML = score + " bonne réponse";
         paysAleatoire(selectedNiveau);
 }
+
+// function autocomplete() {
+//     const input = document.getElementById("inputText");
+//     const ulresults = document.getElementById("listeReponses");
+
+//     input.addEventListener('input', function() {
+//         ulresults.innerHTML = "";
+//         const value = this.value;
+//         if (!value) {
+//             return;
+//         }
+
+//         // on fait matcher avec les donnes du fichier JSON
+//         const matches = capitale.filter(capitale => capitale.toLowerCase().includes(value.toLowerCase()));
+
+//         if (matches.length === 0) {
+//             return;
+//         }
+
+//         for (var i = 0; i < matches.length; ++i) {
+//             const li = document.createElement('li');
+//             li.innerText = matches[i];
+//             li.innerText = li.innerText.replace(/_/g, " ");
+//             li.addEventListener('click', function() {
+//                 input.value = this.innerText;
+//                 ulresults.innerHTML = "";
+//             });
+//             ulresults.appendChild(li);
+
+//         }
+
+//     });
+// }
+// autocomplete();

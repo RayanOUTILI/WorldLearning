@@ -2481,23 +2481,6 @@
             ]
         },
         {
-            "nom": "Indian Ocean",
-            "capitale": null,
-            "monnaie": null,
-            "langue": null,
-            "habitants": null,
-            "drapeau": "img/indian-ocean.png",
-            "continent": "Océanie",
-            "superficie": null,
-            "fuseau_horaire": null,
-            "pib": null,
-            "sites_celebres": [],
-            "sport_national": null,
-            "religion": null,
-            "systeme_politique": null,
-            "pays_frontaliers": []
-        },
-        {
             "nom": "Indonésie",
             "capitale": "Jakarta",
             "monnaie": "Roupie indonésienne",
@@ -3897,27 +3880,6 @@
                 "Suède",
                 "Russie"
             ]
-        },
-        {
-            "nom": "Nouvelle-Calédonie",
-            "capitale": "Nouméa",
-            "monnaie": "Franc CFP",
-            "langue": "Français",
-            "habitants": 287800,
-            "drapeau": "img/nouvelle-caledonie.png",
-            "continent": "Océanie",
-            "superficie": 18575,
-            "fuseau_horaire": "UTC+11",
-            "pib": 10175,
-            "sites_celebres": [
-                "Île des Pins",
-                "Baie de Prony",
-                "Cœur de Voh"
-            ],
-            "sport_national": "Football",
-            "religion": "Christianisme",
-            "systeme_politique": "Collectivité sui generis française",
-            "pays_frontaliers": []
         },
         {
             "nom": "Nouvelle-Zélande",
