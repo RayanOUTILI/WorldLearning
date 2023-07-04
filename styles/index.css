@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     border: 0;
     margin: 0;
@@ -270,13 +272,96 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 /* Styles pour les boutons de sélection de niveau */
 #levelSelection {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-button {
+    display: inline-block;
+    /* width: calc(80% / 3); */
+    width: 60%;
+    padding: 8px 16px;
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
     justify-content: center;
-    margin-top: 10%;
+    text-decoration: none;
+    color: black;  
+    background-color: rgb(69, 236, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: calc(80vh / 3);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 2vh;
+    font-family: Lobster, Georgia, serif;
+}
+
+#btn-normal:hover{
+    background-color: #94c53f;
+}
+
+#btn-difficile:hover{
+    background-color: #FF0000;
+}
+
+#btn-impossible:hover{
+    background-color: #8a2be2 ;
+}
+
+
+.level-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+    /* background-color: #efffcd;  */
+}
+
+
+/* #drapeaux #levelSelection button:nth-of-type(1) {
+    background-image: url("https://img.geonames.org/flags/x/ar.gif");
+}
+
+#drapeaux #levelSelection button:nth-of-type(2) {
+    background-image: url("https://img.geonames.org/flags/x/kz.gif");
+}
+
+#drapeaux #levelSelection button:nth-of-type(3) {
+    background-image: url("https://img.geonames.org/flags/x/im.gif");
+}  */
+
+
+/* #capitales #levelSelection button:nth-of-type(1) {
+    background-image: url("https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg");
+    filter: grayscale(100%);
+}
+
+#capitales #levelSelection button:nth-of-type(2) {
+    background-image: url("https://www.ou-et-quand.net/partir/images/illustration/dublin_756.jpg");
+    filter: grayscale(100%);
+}
+
+#capitales #levelSelection button:nth-of-type(3) {
+    background-image: url("https://media.routard.com/image/77/8/la-valette-malte-capitale.1542778.jpeg");
+    filter: grayscale(100%);
+} */
+
+
+/* boutons hahitants */
+#habSelection {
+    display: flex;
+    justify-content: center;
     width: 100%;
     gap: 5%;
 }
 
-.level-button {
+.hab-button {
     display: inline-block;
     width: calc(80% / 3);
     padding: 8px 16px;
@@ -301,36 +386,11 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }
 
 
-.level-button:hover {
+.hab-button:hover {
     transform: scale(1.1);
     transition: transform 0.5s ease;
 }
 
-
-#drapeaux #levelSelection button:nth-of-type(1) {
-    background-image: url("https://img.geonames.org/flags/x/ar.gif");
-}
-
-#drapeaux #levelSelection button:nth-of-type(2) {
-    background-image: url("https://img.geonames.org/flags/x/kz.gif");
-}
-
-#drapeaux #levelSelection button:nth-of-type(3) {
-    background-image: url("https://img.geonames.org/flags/x/im.gif");
-}
-
-
-#capitales #levelSelection button:nth-of-type(1) {
-    background-image: url("https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg");
-}
-
-#capitales #levelSelection button:nth-of-type(2) {
-    background-image: url("https://www.ou-et-quand.net/partir/images/illustration/dublin_756.jpg");
-}
-
-#capitales #levelSelection button:nth-of-type(3) {
-    background-image: url("https://media.routard.com/image/77/8/la-valette-malte-capitale.1542778.jpeg");
-}
 
 
 #drapeaux {
@@ -469,4 +529,8 @@ footer {
 .btn.indice{
     padding: 5px;
     border-radius: 0;
+}
+
+.level-button, img, .hab-button {
+    clip-path: inset(6px); /*permet de rogner pour ne pas avoir les contours mal faits*/
 }

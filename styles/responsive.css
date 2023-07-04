@@ -36,13 +36,13 @@
 
 @media screen and (max-width:760px) {
 
-    #levelSelection {
+    #levelSelection, #habSelection {
         flex-direction: column;
         align-items: center;
         margin-top: 5%;
     }
 
-    .level-button {
+    .level-button, .hab-button {
         width: 80%;
         margin-bottom: 5%;
         height: 100%;
