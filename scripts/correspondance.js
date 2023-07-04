@@ -1,4 +1,4 @@
-function getNiveauParPays(pays) {
+function getDifficulty(countryName) {
     const correspondance = {
         'Afghanistan': 2,
         'Afrique du Sud': 2,
@@ -263,13 +263,11 @@ function getNiveauParPays(pays) {
 
     const normalizedCountryName = countryName.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
 
-    for (let pays in correspondancePaysAlpha2) {
+    for (let pays in correspondance) {
         const normalizedPays = pays.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
 
         if (normalizedPays === normalizedCountryName) {
-            return correspondancePaysAlpha2[pays];
+            return correspondance[pays];
         }
     }
-
-    return correspondancePaysAlpha2[countryName] || '';
 }
