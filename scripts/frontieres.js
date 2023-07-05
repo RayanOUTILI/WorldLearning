@@ -50,6 +50,7 @@ function validerFrontiere() {
                 score++;
                 document.getElementById("score").innerHTML = score + " bonnes réponses";
                 document.getElementById('messageContainer').textContent = "Réponse correcte ! Vous avez trouvé tous les pays frontaliers bravo !";
+                document.getElementById("messageContainer").style.color = "yellowgreen";
                 //on met un timer 
                 score = 0;
                 setTimeout(function () {
@@ -64,6 +65,7 @@ function validerFrontiere() {
         }
         else if (!correct) {
             document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
+            document.getElementById("messageContainer").style.color = "red";
         }
     }
 }
@@ -75,6 +77,7 @@ function passerFrontiere() {
     else {
         document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Le pays frontalier de " + NomPaysAleatoire + " était " + tabPaysFrontaliers + " ! ";
     }
+    document.getElementById("messageContainer").style.color = "red";
     document.getElementById("listeReponses").innerHTML = "";
     document.getElementById("inputText").value = "";
     score = 0;

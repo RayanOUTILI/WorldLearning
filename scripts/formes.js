@@ -11,6 +11,7 @@ function validerTerritoire() {
 
     if (BonneReponse(RepShape, NomPaysAleatoire)) {
         document.getElementById("messageContainer").innerHTML = "Réponse correcte!";
+        document.getElementById("messageContainer").style.color = "yellowgreen";
         score++;
         if (score == 1) {
             document.getElementById("score").innerHTML = score + " bonne réponse";
@@ -38,6 +39,7 @@ function validerTerritoire() {
     }
     else {
         document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
+        document.getElementById("messageContainer").style.color = "red";
         document.getElementById("listeReponses").innerHTML = "";
         document.getElementById("inputText").value = "";
         score = 0;
@@ -47,6 +49,7 @@ function validerTerritoire() {
 
 function passerTerritoire() {
     document.getElementById("messageContainer").innerHTML = "Vous n'avez pas la réponse ! C'était " + NomPaysAleatoire + " ! ";
+    document.getElementById("messageContainer").style.color = "red";
     //on supprime en cas de mauvaise réponse 
     document.getElementById("listeReponses").innerHTML = "";
     document.getElementById("inputText").value = "";

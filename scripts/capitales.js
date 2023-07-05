@@ -20,7 +20,8 @@ function validerCapitale() {
 
             // on fait la vérification dans le fetch pour que les données soient bien chargées
             if (BonneReponse(userInput, capitale)) {
-                document.getElementById("messageContainer").innerHTML = "Réponse correcte!";
+                document.getElementById("messageContainer").innerHTML = "Réponse correcte !";
+                document.getElementById("messageContainer").style.color = "yellowgreen";
                 score++;
                 if (score == 1) {
                     document.getElementById("score").innerHTML = score + " bonne réponse";
@@ -44,6 +45,7 @@ function validerCapitale() {
                 cacherIndice();
             } else {
                 document.getElementById("messageContainer").innerHTML = "Réponse incorrecte!";
+                document.getElementById("messageContainer").style.color = "red";
                 //on supprime en cas de mauvaise réponse 
                 document.getElementById("listeReponses").innerHTML = "";
                 score = 0;
@@ -57,7 +59,8 @@ function validerCapitale() {
 }
 
 function passerCapitale(){
-    document.getElementById("messageContainer").innerHTML = "Vous n'avez pas la réponse ! C'était " + PaysAleatoire.capitale + " ! ";
+    document.getElementById("messageContainer").innerHTML = "La capitale de " + PaysAleatoire.nom  + "était " + PaysAleatoire.capitale + " ! ";
+        document.getElementById("messageContainer").style.color = "red";
         //on supprime en cas de mauvaise réponse 
         document.getElementById("listeReponses").innerHTML = "";
         document.getElementById("inputText").value = "";

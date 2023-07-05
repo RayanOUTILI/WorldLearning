@@ -3,7 +3,7 @@ var PaysAleatoire;
 var NomPaysAleatoire;
 var selectedNiveau;
 
-function paysAleatoire(niveau) {
+function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut (inutile sauf pour 1v1) */
     fetch('../data/data.json')
         .then(response => response.json())
         .then(data => {
@@ -24,15 +24,15 @@ function paysAleatoire(niveau) {
             console.log(NomPaysAleatoire)
             console.log(PaysAleatoire.capitale);
 
-            if (document.body.id === "capitales") {
+            if (document.body.id === "capitales" || mode === "capitales") {
                 afficherCapitale(NomPaysAleatoire);
             }
 
-            if (document.body.id === "drapeaux") {
+            if (document.body.id === "drapeaux" || mode === "drapeaux") {
                 generateFlagUrl(NomPaysAleatoire);
             }
 
-            if (document.body.id == "frontieres") {
+            if (document.body.id == "frontieres" || mode === "frontieres") {
                 // si le pays n'a pas de pays frontaliers on le retire
                 while (PaysAleatoire.pays_frontaliers.length == 0) {
                     paysAleatoire(1);
@@ -47,7 +47,7 @@ function paysAleatoire(niveau) {
                 afficherFrontiere(NomPaysAleatoire);
             }
 
-            if (document.body.id == "formes") {
+            if (document.body.id == "formes" || mode === "formes") {
                 generateShapeUrl(NomPaysAleatoire);
             }
 

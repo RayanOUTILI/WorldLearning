@@ -119,6 +119,7 @@ input[type="text"] {
     margin-top: 10px;
     padding: 10px;
     color: white;
+    font-weight: bold;
 }
 
 .bg {
@@ -534,3 +535,20 @@ footer {
 .level-button, img, .hab-button {
     clip-path: inset(6px); /*permet de rogner pour ne pas avoir les contours mal faits*/
 }
+
+
+.chrono{
+    margin-top: 1vh;
+    height: 20vh;
+    width: 20%;
+    margin: auto;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#rebours {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+  }

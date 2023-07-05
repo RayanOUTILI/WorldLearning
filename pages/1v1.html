@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>World's countries</title>
+    <script src="../scripts/global.js"></script>
+    <script src="../scripts/capitales.js"></script>
+    <script src="../scripts/drapeaux.js"></script>
+    <script src="../scripts/habitants.js"></script>
+    <script src="../scripts/frontieres.js"></script>
+    <script src="../scripts/formes.js"></script>
+    <script src="../scripts/1v1.js"></script>
+</head>
+
+<body id="1v1">
+    <!-- on appel recup pays -->
+    <script>
+        // paysAleatoire();
+    </script>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="capitales.html">Capitales</a></li>
+            <li><a href="drapeaux.html">Drapeaux</a></li>
+            <li><a href="habitants.html">Habitants</a></li>
+            <li><a href="frontieres.html">Frontieres</a></li>
+            <li><a href="formes.html">Territoires</a></li>
+        </ul>
+    </nav>
+
+    <div class="info-multi">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur modi dignissimos obcaecati
+            facilis distinctio accusamus dolore repudiandae, corporis officiis, vero ipsam deserunt vel cum cupiditate
+            in maiores repellendus explicabo.</p>
+        <button onclick="modeAleatoireChrono();">Commencer</button>
+    </div>
+
+    <div class="game-content">
+        <div class="chrono">
+            <span id="rebours"></span>
+        </div>
+        <h2 id="h2Text"></h2>
+        <div class="container">
+            <div id="DrapeauDuPays">
+                <img id="drapeauImage" src="">
+            </div>
+                <div class="quest">
+                    <input type="text" id="inputText" placeholder="">
+                    <button class="btn btn-valider" onclick="validerCapitale()">Valider</button>
+                    <button class="btn btn-passer" onclick="passerCapitale()">Passer</button>
+                </div>
+            </div>
+            <div class="game-info">
+                <p id="score"></p>
+                <ul id="listeReponses"></ul>
+            </div>
+        </div>
+
+
+        <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
+        <script>
+            var inputText = document.getElementById("inputText");
+
+            inputText.addEventListener("keydown", function (event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    validerCapitale();
+                }
+            });
+        </script>
+
+</body>
+
+</html>
