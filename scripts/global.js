@@ -24,15 +24,15 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
             console.log(NomPaysAleatoire)
             console.log(PaysAleatoire.capitale);
 
-            if (document.body.id === "capitales" || mode === "capitales") {
+            if (document.body.id === "capitales") { //|| mode === "capitales"
                 afficherCapitale(NomPaysAleatoire);
             }
 
-            if (document.body.id === "drapeaux" || mode === "drapeaux") {
+            if (document.body.id === "drapeaux") { // || mode === "drapeaux"
                 generateFlagUrl(NomPaysAleatoire);
             }
 
-            if (document.body.id == "frontieres" || mode === "frontieres") {
+            if (document.body.id == "frontieres") { //  || mode === "frontieres"
                 // si le pays n'a pas de pays frontaliers on le retire
                 while (PaysAleatoire.pays_frontaliers.length == 0) {
                     paysAleatoire(1);
@@ -47,7 +47,7 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
                 afficherFrontiere(NomPaysAleatoire);
             }
 
-            if (document.body.id == "formes" || mode === "formes") {
+            if (document.body.id == "formes") { //  || mode === "formes"
                 generateShapeUrl(NomPaysAleatoire);
             }
 
