@@ -332,15 +332,30 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }
 
 #btn-normal:hover {
-    background-color: #94c53f;
+    background-color: #94c53f; 
+    filter: none !important;
+}
+
+#capitales #btn-normal:hover {
+    color: #94c53f;  
 }
 
 #btn-difficile:hover {
     background-color: #FF0000;
+    filter: none !important;
+}
+
+#capitales #btn-difficile:hover {
+    color: #FF0000;   
 }
 
 #btn-impossible:hover {
     background-color: #8a2be2;
+    filter: none !important;
+}
+
+#capitales #btn-impossible:hover {
+    color: #8a2be2;   
 }
 
 
@@ -350,8 +365,11 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
     /* background-color: #efffcd;  */
 }
 
+/* #drapeaux #levelSelection button{
+    background-size: cover;
+} */
 
-/* #drapeaux #levelSelection button:nth-of-type(1) {
+ /* #drapeaux #levelSelection button:nth-of-type(1) {
     background-image: url("https://img.geonames.org/flags/x/ar.gif");
 }
 
@@ -361,10 +379,10 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 
 #drapeaux #levelSelection button:nth-of-type(3) {
     background-image: url("https://img.geonames.org/flags/x/im.gif");
-}  */
+}   */
 
 
-/* #capitales #levelSelection button:nth-of-type(1) {
+ #capitales #levelSelection button:nth-of-type(1) {
     background-image: url("https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg");
     filter: grayscale(100%);
 }
@@ -377,7 +395,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 #capitales #levelSelection button:nth-of-type(3) {
     background-image: url("https://media.routard.com/image/77/8/la-valette-malte-capitale.1542778.jpeg");
     filter: grayscale(100%);
-} */
+} 
 
 
 /* boutons hahitants */
