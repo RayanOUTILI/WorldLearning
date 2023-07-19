@@ -2682,23 +2682,6 @@
             "pays_frontaliers": []
         },
         {
-            "nom": "Jan Mayen",
-            "capitale": null,
-            "monnaie": null,
-            "langue": null,
-            "habitants": null,
-            "drapeau": "img/jan-mayen.png",
-            "continent": "Europe",
-            "superficie": null,
-            "fuseau_horaire": "UTC±0",
-            "pib": null,
-            "sites_celebres": [],
-            "sport_national": null,
-            "religion": null,
-            "systeme_politique": null,
-            "pays_frontaliers": []
-        },
-        {
             "nom": "Japon",
             "capitale": "Tokyo",
             "monnaie": "Yen",
