@@ -19,6 +19,10 @@
     </script>
 
     <nav>
+        <div id="nav-titre">
+            <h1><a href="../index.html">Worl<span class="dle">dLe</span>arning</a></h1>
+            <img src="./img/john-wick.png" id="jw">
+        </div>
         <ul>
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="capitales.html">Capitales</a></li>
@@ -31,8 +35,10 @@
 
     <div id="levelSelection">
         <button id="btn-normal" class="level-button" onclick="var niveau = 1; choisirNiveau(niveau);">Normal</button>
-        <button id="btn-difficile" class="level-button" onclick="var niveau = 2; choisirNiveau(niveau);">Difficile</button>
-        <button id="btn-impossible" class="level-button" onclick="var niveau = 3; choisirNiveau(niveau);">Impossible</button>
+        <button id="btn-difficile" class="level-button"
+            onclick="var niveau = 2; choisirNiveau(niveau);">Difficile</button>
+        <button id="btn-impossible" class="level-button"
+            onclick="var niveau = 3; choisirNiveau(niveau);">Impossible</button>
     </div>
 
     <div class="game-content">
@@ -55,7 +61,7 @@
             <ul id="listeReponses"></ul>
         </div>
     </div>
-    
+
     <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
     <script>
         var inputText = document.getElementById("inputText");
