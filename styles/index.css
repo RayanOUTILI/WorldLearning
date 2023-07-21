@@ -126,9 +126,6 @@ input[type="text"] {
     /* background-image: url("../img/bground.jpeg");
      */
     background-color: #0F172A;
-    ;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
 }
 
@@ -211,6 +208,10 @@ nav a:hover {
     min-height: 100%;
     justify-content: center;
     padding: 64px 24px;
+    background-image: url('https://image.ibb.co/ciqtRe/word_map_dot_matrix.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .card-grid {
@@ -332,12 +333,12 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }
 
 #btn-normal:hover {
-    background-color: #94c53f; 
+    background-color: #94c53f;
     filter: none !important;
 }
 
 #capitales #btn-normal:hover {
-    color: #94c53f;  
+    color: #94c53f;
 }
 
 #btn-difficile:hover {
@@ -346,7 +347,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }
 
 #capitales #btn-difficile:hover {
-    color: #FF0000;   
+    color: #FF0000;
 }
 
 #btn-impossible:hover {
@@ -355,7 +356,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }
 
 #capitales #btn-impossible:hover {
-    color: #8a2be2;   
+    color: #8a2be2;
 }
 
 
@@ -369,7 +370,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
     background-size: cover;
 } */
 
- /* #drapeaux #levelSelection button:nth-of-type(1) {
+/* #drapeaux #levelSelection button:nth-of-type(1) {
     background-image: url("https://img.geonames.org/flags/x/ar.gif");
 }
 
@@ -382,7 +383,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 }   */
 
 
- #capitales #levelSelection button:nth-of-type(1) {
+#capitales #levelSelection button:nth-of-type(1) {
     background-image: url("https://res.klook.com/image/upload/Mobile/City/afmqgg5h0jl9wnr1dfmf.jpg");
     filter: grayscale(100%);
 }
@@ -395,7 +396,7 @@ le probleme ici c'est que ~ indique seulement les freres suivants de la carte su
 #capitales #levelSelection button:nth-of-type(3) {
     background-image: url("https://media.routard.com/image/77/8/la-valette-malte-capitale.1542778.jpeg");
     filter: grayscale(100%);
-} 
+}
 
 
 /* boutons hahitants */
@@ -611,7 +612,7 @@ img,
 #map svg {
     margin-top: 0.5vh;
     width: 100vw;
-    height: 75vh;
+    height: 72vh;
 }
 
 #map path {
@@ -620,11 +621,11 @@ img,
 }
 
 #map .country.active {
-    fill: deepskyblue;
+    fill: deepskyblue !important;
 }
 
 #map .quest {
     width: 30%;
     margin: auto;
-    margin-top: 25px;
+    margin-top: 15px;
 }
