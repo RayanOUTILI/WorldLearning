@@ -1,4 +1,4 @@
-# World's countries 
+# WorlDLEarning 
 
 Ce projet est un site web proposant de nombreux mini-jeux basés sur les pays du monde. Chaque mode mettra à l'épreuve vos connaissances sur les capitales, drapeaux, populations, frontières et formes des pays !
 

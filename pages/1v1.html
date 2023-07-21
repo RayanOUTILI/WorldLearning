@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <meta charset="utf-8">
-    <title>World's countries</title>
+    <title>WorlDLEarning</title>
     <script src="../scripts/global.js"></script>
     <script src="../scripts/capitales.js"></script>
     <script src="../scripts/drapeaux.js"></script>
@@ -50,30 +50,30 @@
             <div id="DrapeauDuPays">
                 <img id="drapeauImage" src="">
             </div>
-                <div class="quest">
-                    <input type="text" id="inputText" placeholder="">
-                    <button class="btn btn-valider" onclick="validerCapitale()">Valider</button>
-                    <button class="btn btn-passer" onclick="passerCapitale()">Passer</button>
-                </div>
-            </div>
-            <div class="game-info">
-                <p id="score"></p>
-                <ul id="listeReponses"></ul>
+            <div class="quest">
+                <input type="text" id="inputText" placeholder="">
+                <button class="btn btn-valider" onclick="validerCapitale()">Valider</button>
+                <button class="btn btn-passer" onclick="passerCapitale()">Passer</button>
             </div>
         </div>
+        <div class="game-info">
+            <p id="score"></p>
+            <ul id="listeReponses"></ul>
+        </div>
+    </div>
 
 
-        <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
-        <script>
-            var inputText = document.getElementById("inputText");
+    <!-- provisoire pour compenser l'absence de la balise forme et pourvoir soumettre une rep avec "Entrer" -->
+    <script>
+        var inputText = document.getElementById("inputText");
 
-            inputText.addEventListener("keydown", function (event) {
-                if (event.keyCode === 13) {
-                    event.preventDefault();
-                    validerCapitale();
-                }
-            });
-        </script>
+        inputText.addEventListener("keydown", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                validerCapitale();
+            }
+        });
+    </script>
 
 </body>
 
