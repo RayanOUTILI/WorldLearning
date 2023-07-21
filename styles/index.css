@@ -599,3 +599,37 @@ img,
     font-weight: bold;
     color: white;
 }
+
+/* map */
+#map {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #031530;
+    overflow: hidden;
+}
+
+#map svg {
+    width: 100vw;
+    height: 75vh;
+}
+
+#map path {
+    fill: #ffe6e6;
+    cursor: pointer;
+}
+
+#map .country.active {
+    fill: deepskyblue;
+}
+
+
+#map .quest {
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#map #btn{
+    width: 100%;
+}
