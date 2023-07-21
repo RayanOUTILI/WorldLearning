@@ -158,3 +158,19 @@
   }
 
   /* fin footer */
+
+/* map */
+
+@media screen and (max-width: 1300px) {
+    #map svg {
+        margin-top: 10vh;
+        width: 95%;
+        height: auto;
+    }
+
+    #map .quest {
+        width: 60%;
+        margin: auto;
+        margin-top: 5vh;
+    }
+}

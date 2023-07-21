@@ -605,11 +605,11 @@ img,
     margin: 0;
     justify-content: center;
     align-items: center;
-    background-color: #031530;
-    overflow: hidden;
+    /* background-color: #031530; */
 }
 
 #map svg {
+    margin-top: 0.5vh;
     width: 100vw;
     height: 75vh;
 }
@@ -623,13 +623,8 @@ img,
     fill: deepskyblue;
 }
 
-
 #map .quest {
     width: 30%;
     margin: auto;
     margin-top: 25px;
-}
-
-#map #btn{
-    width: 100%;
 }
