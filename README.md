@@ -1,8 +1,8 @@
-# WorlDLEarning 
+# WorlDLEarning
 
 Ce projet est un site web proposant de nombreux mini-jeux basés sur les pays du monde. Chaque mode mettra à l'épreuve vos connaissances sur les capitales, drapeaux, populations, frontières et formes des pays !
 
-![image](https://github.com/RayanOUTILI/countries-project/assets/59539437/fa92a321-7109-469d-956b-4a0f5555e9a9)
+![image](https://github.com/RayanOUTILI/countries-project/assets/59539437/d71d686e-3bae-43e7-9125-958faa901d2e)
  
 ## Motivation 
 J'ai réalisé ce projet pour renforcer mes connaissances en JavaScript, et évidemment sur les pays du monde. Le but étant qu'un maximum de personnes puissent passer du bon temps sur un jeu "noble" intellectuellement parlant.
