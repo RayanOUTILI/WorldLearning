@@ -1,6 +1,7 @@
 var nbPaysTrouves = 0;
 var chrono = 480;
 var h2paysTrouves; // Déclarer la variable globale ici
+var tabPaysTrouve = [];
 
 document.addEventListener("DOMContentLoaded", function () {
     startCountdown();
@@ -19,7 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         var codeAuserCountry = getCodeAlpha2(userCountry);
         console.log(getCodeAlpha2(userCountry));
 
-        if (codeAuserCountry) {
+
+        if (codeAuserCountry && tabPaysTrouve.indexOf(codeAuserCountry) === -1) {
+            tabPaysTrouve.push(codeAuserCountry);
             nbPaysTrouves++;
             h2paysTrouves.innerHTML = 'Pays : ' + nbPaysTrouves;
 
@@ -31,6 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
             // on met la couleur du path en rouge
             // path.classList.add('active');
             path.style.fill = 'blue';
+            document.getElementById('input-country').value = '';
+        }
+
+        else{
+            mauvaiseRep.play();
             document.getElementById('input-country').value = '';
         }
     });
