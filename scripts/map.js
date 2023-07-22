@@ -1,10 +1,12 @@
 var nbPaysTrouves = 0;
 var chrono = 480;
-var h2paysTrouves; // Déclarer la variable globale ici
+var h2paysTrouves; 
 var tabPaysTrouve = [];
+
 
 document.addEventListener("DOMContentLoaded", function () {
     startCountdown();
+    init_cookie();
     h2paysTrouves = document.getElementById("paysTrouves"); // Affecter la valeur à la variable globale
     var h2Chrono = document.getElementById("tempsRestant");
     h2paysTrouves.innerHTML = 'Pays : ' + nbPaysTrouves;
@@ -13,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (nbPaysTrouves >= 175) {
         h2paysTrouves.innerHTML = 'Félicitations, vous avez trouvé tous les pays !';
         document.getElementById('input-country').setAttribute('disabled', 'disabled');
+        updateMaxScore();
         return;
     }
     btn.addEventListener('click', function () {
@@ -31,13 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             var path = document.querySelector('.' + codeAuserCountry);
 
+            updateMaxScore();
+            console.log(maxScore);
+
             // on met la couleur du path en rouge
             // path.classList.add('active');
             path.style.fill = 'blue';
             document.getElementById('input-country').value = '';
         }
 
-        else{
+        else {
             mauvaiseRep.play();
             document.getElementById('input-country').value = '';
         }
@@ -64,6 +70,7 @@ function startCountdown() {
         if (chrono <= 0) {
             clearInterval(countdownInterval);
             countdownElement.textContent = "Temps écoulé";
+            updateMaxScore();
             h2paysTrouves.innerHTML = 'Partie terminée, vous avez trouvé ' + nbPaysTrouves + ' pays.';
             document.getElementById('input-country').setAttribute('disabled', 'disabled');
         }

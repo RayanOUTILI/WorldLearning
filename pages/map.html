@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <meta charset="utf-8">
     <title>WorlDLEarning</title>
+    <script src="../scripts/cookie.js"></script>
     <script src="../scripts/svg.js"></script>
     <script src="../scripts/global.js"></script>
     <script src="../scripts/drapeaux.js"></script>
@@ -31,10 +32,12 @@
     </nav>
     <audio id="bonneRep" src="../audio/bonneRep.mp3" id="son"></audio>
     <audio id="mauvaiseRep" src="../audio/mauvaiseRep.mp3" id="son"></audio>
-    <div style=" text-align: center; display: flex; justify-content: center; align-items: center; gap: 5%;">
-        <h2 id="paysTrouves" style="flex:1; margin-left:10%"></h2>
-        <h2 id="tempsRestant" style="margin-right: 2%;"></h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; gap: 5%;">
+        <h2 id="scoreMax" style="margin-left: 10%;"></h2>
+        <h2 id="paysTrouves" style="text-align: center; flex: 1;"></h2>
+        <h2 id="tempsRestant" style="margin-right: 10%;"></h2>
     </div>
+
     <div id="map-container">
     </div>
     <div class="quest">
