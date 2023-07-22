@@ -59,7 +59,7 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
 
 // Le but de la méthode c'est d'éviter les fausses mauvaises réponses si on oublie un accent par exemple
 // utilise les expressions régulières pour supprimer les accents, les espaces, les apostrophes et les tirets et mettre tout en minuscule
-function BonneReponse(RepJoueur, RepAttendue) {
+function BonneReponse(RepJoueur, RepAttendue) { 
     RepJoueur = RepJoueur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     RepAttendue = RepAttendue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     var similarity = calculateJaroWinklerSimilarity(RepJoueur, RepAttendue);

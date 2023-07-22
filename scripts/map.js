@@ -348,7 +348,12 @@ function getCodeAlpha2(countryName) {
     for (let pays in correspondancePaysAlpha2) {
         const normalizedPays = pays.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
 
-        if (BonneReponse(normalizedCountryName, normalizedPays)) {  //pour map.js, on permet une marge d'erreur
+        // on traite le cas usa
+        if (normalizedCountryName === 'usa' && normalizedPays === 'etatsunis') {
+            return correspondancePaysAlpha2[pays];
+        }
+
+        else if (BonneReponse(normalizedCountryName, normalizedPays)) {  //pour map.js, on permet une marge d'erreur
             console.log("Pays non trouvé : " + normalizedPays);
             console.log("Pays normalisé : " + normalizedCountryName);
             return correspondancePaysAlpha2[pays];
