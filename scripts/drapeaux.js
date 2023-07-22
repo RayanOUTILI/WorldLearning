@@ -65,7 +65,11 @@ function passerDrapeau(){
 }
 
 
+// pays de référence : https://www.indexmundi.com/fr/
+
+
 // méthode qui associe chaque pays à son code alpha2 ce qui permet de récupérer une url pour afficher le drapeau
+// aussi utilisée pour map.js, pour faire correspondre le pays au territoire associé (svg)
 function getCodeAlpha2(countryName) {
     const correspondancePaysAlpha2 = {
         Afghanistan: 'AF',
@@ -334,7 +338,7 @@ function getCodeAlpha2(countryName) {
     for (let pays in correspondancePaysAlpha2) {
         const normalizedPays = pays.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
 
-        if (normalizedPays === normalizedCountryName) {
+        if (normalizedCountryName === normalizedPays) {
             console.log("Pays non trouvé : " + normalizedPays);
             console.log("Pays normalisé : " + normalizedCountryName);
             return correspondancePaysAlpha2[pays];
@@ -342,6 +346,3 @@ function getCodeAlpha2(countryName) {
     }
     return correspondancePaysAlpha2[countryName] || '';
 }
-
-
-// pays de référence : https://www.indexmundi.com/fr/

@@ -59,7 +59,7 @@ function validerCapitale() {
 }
 
 function passerCapitale(){
-    document.getElementById("messageContainer").innerHTML = "La capitale de " + PaysAleatoire.nom  + "était " + PaysAleatoire.capitale + " ! ";
+    document.getElementById("messageContainer").innerHTML = "La capitale de " + PaysAleatoire.nom  + " était " + PaysAleatoire.capitale + " ! ";
         document.getElementById("messageContainer").style.color = "red";
         //on supprime en cas de mauvaise réponse 
         document.getElementById("listeReponses").innerHTML = "";

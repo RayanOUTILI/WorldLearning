@@ -5,9 +5,10 @@ function afficherFrontiere(NomPaysAleatoire) {
     if (tabPaysFrontaliers.length > 1) {
         document.getElementById('inputText').placeholder = "Quelle sont les pays frontaliers de " + NomPaysAleatoire + "?";
     }
-    else {
+    else{
         document.getElementById('inputText').placeholder = "Quelle est le pays frontalier de " + NomPaysAleatoire + "?";
     }
+    // cas 0 deja traité
     document.getElementById("NomDuPays").innerHTML = NomPaysAleatoire;
 }
 
@@ -26,6 +27,7 @@ function validerFrontiere() {
                 document.getElementById('inputText').placeholder = "Quelle sont les pays frontaliers de " + NomPaysAleatoire + "?";
                 document.getElementById('inputText').value = "";
                 document.getElementById('messageContainer').textContent = "Réponse correcte ! Il reste " + tabPaysFrontaliers.length + " pays frontaliers à trouver !";
+                document.getElementById("messageContainer").style.color = "yellowgreen";
                 score++;
                 if (score == 1) {
                     document.getElementById("score").innerHTML = score + " bonne réponse";
@@ -72,7 +74,7 @@ function validerFrontiere() {
 
 function passerFrontiere() {
     if (tabPaysFrontaliers.length > 1) {
-        document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Les pays frontaliers de " + NomPaysAleatoire + " étaient " + tabPaysFrontaliers + " ! ";
+        document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Les pays frontaliers de " + NomPaysAleatoire + " étaient " + tabPaysFrontaliers.join(" - ") + " ! ";
     }
     else {
         document.getElementById("messageContainer").innerHTML = "Vous avez abandonné ! Le pays frontalier de " + NomPaysAleatoire + " était " + tabPaysFrontaliers + " ! ";

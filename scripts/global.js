@@ -34,7 +34,7 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
 
             if (document.body.id == "frontieres") { //  || mode === "frontieres"
                 // si le pays n'a pas de pays frontaliers on le retire
-                while (PaysAleatoire.pays_frontaliers.length == 0) {
+                if (PaysAleatoire.pays_frontaliers.length == 0) {
                     paysAleatoire(1);
                 }
 
@@ -63,7 +63,7 @@ function BonneReponse(RepJoueur, RepAttendue) {
     RepJoueur = RepJoueur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     RepAttendue = RepAttendue.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
     var similarity = calculateJaroWinklerSimilarity(RepJoueur, RepAttendue);
-    var threshold = 0.8; // 20% de marge d'erreur
+    var threshold = 0.85; // 15% de marge d'erreur
     return similarity >= threshold;
 }
 
@@ -208,7 +208,6 @@ function cacherIndice() {
     }
 
 }
-
 
 //méthode getDifficulty - basée sur des critères (très subjectifs), il se peut que ce ne soit pas très fiable
 //donne quand même + ou - une idée et permet de trier les pays par difficulté (à améliorer par la suite)
