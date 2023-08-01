@@ -171,7 +171,7 @@ function getCodeAlpha2(stateName) {
     for (let pays in correspondanceEtatsAlpha2) {
         const normalizedPays = pays.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
 
-        if (normalizedCountryName === normalizedPays) {  //on permet une marge d'erreur
+        if (BonneReponse(normalizedCountryName, normalizedPays)) {  //on permet une marge d'erreur
             return correspondanceEtatsAlpha2[pays];
         }
     }
