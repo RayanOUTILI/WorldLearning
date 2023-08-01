@@ -629,3 +629,14 @@ img,
     margin: auto;
     margin-top: 15px;
 }
+
+/* map usa */
+
+.state {
+    fill: #D0D0D0
+}
+
+.borders {
+    stroke: #989898;
+    stroke-width: 1
+}
