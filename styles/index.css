@@ -584,7 +584,7 @@ img,
     /*permet de rogner pour ne pas avoir les contours mal faits*/
 }
 
-#info { 
+#info img{ 
     clip-path: none;
 }
 
