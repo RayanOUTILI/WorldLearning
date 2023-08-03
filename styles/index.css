@@ -641,3 +641,39 @@ img,
     stroke-width: 1
 }
 
+/* info */
+#b-info {
+    font-family: Arial, sans-serif;
+    /* background-color: #8a2be2 !important; */
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 2px;
+    text-align: center;
+}
+
+th {
+    background-color: #4affdb;
+    padding: 10px;
+}
+
+/* Ligne paire : fond bleu clair */
+tr:nth-child(even) {
+    background-color: #7fd7ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #cceeff;
+}
+
+td{
+    border: none;
+}
