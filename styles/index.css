@@ -584,6 +584,9 @@ img,
     /*permet de rogner pour ne pas avoir les contours mal faits*/
 }
 
+#info { 
+    clip-path: none;
+}
 
 .chrono {
     margin-top: 1vh;
