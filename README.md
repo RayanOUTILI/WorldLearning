@@ -1,8 +1,8 @@
-# WorlDLEarning
+# WorlLearning
 
 Ce projet est un site web proposant de nombreux mini-jeux basés sur les pays du monde. Chaque mode mettra à l'épreuve vos connaissances sur les capitales, drapeaux, populations, frontières et formes des pays !
 
-![image](https://github.com/RayanOUTILI/countries-project/assets/59539437/d71d686e-3bae-43e7-9125-958faa901d2e)
+![Alt text](image.png)
  
 ## Motivation 
 J'ai réalisé ce projet pour renforcer mes connaissances en JavaScript, et évidemment sur les pays du monde. Le but étant qu'un maximum de personnes puissent passer du bon temps sur un jeu "noble" intellectuellement parlant.
@@ -15,14 +15,16 @@ Les informations sur les pays utilisées dans ce jeu sont basées sur des source
 ### Objectivité
 Je tiens par ailleurs insister sur le fait que je ne prends aucune prise de partie en ce qui concerne les éventuels conflits géopolitiques qui peuvent concerner certains pays ou territoires présents dans ce jeu.
 
-## Fonctionnalités
+## Modes de jeu
 
 * **Capitales** Devinez les capitales du monde (plusieurs niveaux de difficulté).
 * **Drapeaux** : Devinez les drapeaux du monde (plusieurs niveaux de difficulté).
 * **Habitants** : Choisissez le pays avec la population la plus élevée parmi deux pays.
 * **Pays limitrophes** : Devinez les pays frontaliers d'un pays tiré aléatoirement.
 * **Territoire** : Devinez le nom du pays à partir de la forme de celui-ci.
-* **A venir**...
+* **Carte du monde** : Trouvez un maximum de pays dans un temps imparti.
+* **Etats Unis** : Trouvez un maxmimum d'états américains dans un temps imparti.
+* **Monnaie** : Devinez les devises de chaque pays.
 
 ## Aspects techniques 
 * **Stockage des données** : J'ai utilisé un fichier JSON pour stocker les informations relatives à chaque pays (nom, la capitale, la monnaie, la langue, la population...).
@@ -113,4 +115,4 @@ Pour toutes questions, suggestions ou corrections de bugs, veuillez s'il vous pl
 
 ## Comment Jouer ?
 Le site est assez intuitif, suivez ce lien et amusez-vous ! 
-https://rayanoutili.github.io/countries-project/
+https://rayanoutili.github.io/Worldlearning/
