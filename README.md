@@ -115,4 +115,4 @@ Pour toutes questions, suggestions ou corrections de bugs, veuillez s'il vous pl
 
 ## Comment Jouer ?
 Le site est assez intuitif, suivez ce lien et amusez-vous ! 
-https://rayanoutili.github.io/Worldlearning/
+https://rayanoutili.github.io/WorldLearning/
