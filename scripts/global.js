@@ -23,6 +23,7 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
 
             console.log(NomPaysAleatoire)
             console.log(PaysAleatoire.capitale);
+            console.log(PaysAleatoire.monnaie);
 
             if (document.body.id === "capitales") { //|| mode === "capitales"
                 afficherCapitale(NomPaysAleatoire);
@@ -49,6 +50,10 @@ function paysAleatoire(niveau, mode = "pas de multi") { /*2eme param par défaut
 
             if (document.body.id == "formes") { //  || mode === "formes"
                 generateShapeUrl(NomPaysAleatoire);
+            }
+
+            if (document.body.id == "monnaie") { //  || mode === "formes"
+                afficherMonnaie(NomPaysAleatoire);
             }
 
         })
@@ -184,6 +189,21 @@ function donnerIndicePaysFrontaliers() {
             else {
                 document.getElementById("messageContainer").textContent = "Un pays frontalier " + tabPaysFrontaliers[0] + " !";
             }
+        });
+}
+
+function donnerIndiceMonnaie(){
+    fetch('../data/data.json')
+        .then(response => response.json())
+        .then(data => {
+            var monnaie = "";
+            data.pays.forEach(element => {
+                if (element.nom === NomPaysAleatoire) {
+                    monnaie = element.monnaie;
+                }
+            });
+            monnaie = monnaie.charAt(0);
+            document.getElementById("messageContainer").innerHTML = "La première lettre est " + monnaie + " ! ";
         });
 }
 

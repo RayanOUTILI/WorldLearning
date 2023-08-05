@@ -5,6 +5,7 @@
     }
     .card-section{
         align-items: center;
+        background-image: none;
     }
 }
 
@@ -153,7 +154,7 @@
   
   @media screen and (max-width: 550px) {
     footer {
-      margin-top: 2900px; /*res smartphone*/
+      margin-top: 3300px; /*res smartphone +400/card*/
     }
   }
 

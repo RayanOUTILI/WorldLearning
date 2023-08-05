@@ -138,13 +138,16 @@ input[type="text"] {
 }
 
 nav {
-    background-color: #0e2543;
+    background-color: #0c1623;/*0e2543*/
     padding: 30px;
     text-align: center;
     border-bottom: 1px solid #0e2543;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url('https://image.ibb.co/ciqtRe/word_map_dot_matrix.png');
+    background-position: center;
+    background-size: cover;
 }
 
 nav ul {
@@ -172,7 +175,7 @@ nav a:hover {
 }
 
 .dle {
-    color: rgb(153, 255, 90);
+    color: rgb(89, 211, 255);
 }
 
 #jw {
@@ -257,9 +260,9 @@ nav a:hover {
 
 /*ici à reprendre car je veux que ttes les cartes soient floutées
 le probleme ici c'est que ~ indique seulement les freres suivants de la carte survolée...*/
-.card:hover~.card:not(:hover) .card-bg {
+/* .card:hover~.card:not(:hover) .card-bg {
     filter: brightness(1) saturate(0.7) contrast(1.2) blur(10px);
-}
+} */
 
 
 .card-content {
@@ -476,7 +479,7 @@ footer {
     flex-shrink: 0;
     border-top: 1px solid black;
     width: 100%;
-    background-color: #0e2543;
+    background-color: #111820;
     color: white;
 }
 
@@ -537,6 +540,7 @@ footer {
 
 .liste-modes li {
     padding: 2px 0;
+    font-weight: bold;
 }
 
 .liste-modes a {
@@ -674,6 +678,10 @@ tr:nth-child(odd) {
     background-color: #cceeff;
 }
 
-td{
+td {
     border: none;
+}
+
+#monnaie .container{
+    margin-top: 10%;
 }

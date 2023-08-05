@@ -9,14 +9,18 @@
     <meta charset="utf-8">
     <title>WorlDLEarning</title>
     <script src="../scripts/global.js"></script>
-    <script src="../scripts/formes.js"></script>
-    <script src="../scripts/drapeaux.js"></script>
+    <script src="../scripts/monnaie.js"></script>
 </head>
 
-<body id="formes">
+<body id="monnaie">
     <!-- on appel recup pays -->
     <script>
-        paysAleatoire(1);
+        var random = Math.floor(Math.random() * 2);
+        if (random == 0) {
+            paysAleatoire(1);
+        } else {
+            paysAleatoire(2);
+        }
     </script>
 
     <nav>
@@ -33,21 +37,23 @@
             <li><a href="formes.html">Territoires</a></li> -->
         </ul>
     </nav>
+<!-- 
+    <div id="levelSelection">
+        <button id="btn-normal" class="level-button" onclick="var niveau = 1; choisirNiveau(niveau);">Normal</button>
+        <button id="btn-difficile" class="level-button" onclick="var niveau = 2; choisirNiveau(niveau);">Difficile</button>
+        <button id="btn-impossible" class="level-button" onclick="var niveau = 3; choisirNiveau(niveau);">Impossible</button>
+    </div> -->
 
     <div class="game-content">
         <div class="container">
-            <div id="DrapeauDuPays">
-                <img id="formeImage" src="">
-            </div>
+            <h3 id="NomDuPays"></h3>
             <div class="quest">
                 <input type="text" id="inputText" placeholder="">
-                <button class="btn btn-valider" onclick="validerTerritoire()">Valider</button>
-                <button class="btn btn-passer" onclick="passerTerritoire()">Passer</button>
+                <button class="btn btn-valider" onclick="validerMonnaie()">Valider</button>
+                <button class="btn btn-passer" onclick="passerMonnaie()">Passer</button>
                 <button class="btn" onclick="afficherIndice()">Indice</button>
                 <div class="button-container">
-                    <button class="btn indice" onclick="donnerIndiceContinent()">Indice continent</button>
-                    <button class="btn indice" onclick="donnerIndiceHabitants()">Indice habitants</button>
-                    <button class="btn indice" onclick="donnerIndicePaysFrontaliers()">Indice pays frontaliers</button>
+                    <button class="btn indice" onclick="donnerIndiceMonnaie()">Indice monnaie</button>
                 </div>
                 <div id="messageContainer" class="message">
                 </div>
@@ -66,10 +72,17 @@
         inputText.addEventListener("keydown", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
-                validerTerritoire();
+                validerMonnaie();
             }
         });
 
+        document.querySelector('.container').style.display = 'block';
+
+        // function choisirNiveau(niveau) {
+        //     document.getElementById('levelSelection').style.display = 'none';
+        // document.querySelector('.container').style.display = 'block';
+        //     paysAleatoire(niveau);
+        // }
     </script>
 
 </body>
