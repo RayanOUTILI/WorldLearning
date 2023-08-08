@@ -3,10 +3,10 @@ var tabPaysFrontaliers = [];
 function afficherFrontiere(NomPaysAleatoire) {
     document.getElementById('inputText').value = "";
     if (tabPaysFrontaliers.length > 1) {
-        document.getElementById('inputText').placeholder = "Quelle sont les pays frontaliers de " + NomPaysAleatoire + "?";
+        document.getElementById('inputText').placeholder = "Quels sont les pays frontaliers de " + NomPaysAleatoire + "?";
     }
     else{
-        document.getElementById('inputText').placeholder = "Quelle est le pays frontalier de " + NomPaysAleatoire + "?";
+        document.getElementById('inputText').placeholder = "Quel est le pays frontalier de " + NomPaysAleatoire + "?";
     }
     // cas 0 deja traité
     document.getElementById("NomDuPays").innerHTML = NomPaysAleatoire;
