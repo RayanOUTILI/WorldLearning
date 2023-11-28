@@ -1,4 +1,4 @@
-# WorlLearning
+# WorldLearning
 
 Ce projet est un site web proposant de nombreux mini-jeux basés sur les pays du monde. Chaque mode mettra à l'épreuve vos connaissances sur les capitales, drapeaux, populations, frontières et formes des pays !
 
@@ -63,7 +63,7 @@ Attention, je suis conscient que cette évaluation peut ne pas être très fiabl
 * **Marge d'erreur** :
 1. Pour éviter les fausses mauvaises réponses dues à des erreurs syntaxiques, j'ai mis en place une méthode de comparaison. Cette méthode utilise des expressions régulières pour supprimer les accents, les espaces, les apostrophes et les tirets, et met tout en minuscule, c'est une méthode de *normalisation*, en somme.
 Cela permet d'obtenir une correspondance plus juste entre les réponses fournies par les joueurs et les réponses attendues.
-De ce fait, Etat-Unis peut s'écrire etat unis.
+De ce fait, Etats-Unis peut s'écrire etats unis.
 ```
 function BonneReponse(RepJoueur, RepAttendue) {
     RepJoueur = RepJoueur.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f\s'-]/g, "");
